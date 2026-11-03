@@ -12,15 +12,15 @@ chapter: false
 
 &emsp; **MSSV:** SE204818
 
-&emsp; **Số điện thoại:** [số điện thoại của bạn]
+&emsp; **Số điện thoại:** [0792200524]
 
-&emsp; **Email:** [email của bạn]
+&emsp; **Email:** [thanhtamtran1406@gmail.com]
 
 &emsp; **Trường:** Đại học FPT, TP.HCM
 
 &emsp; **Ngành:** An toàn thông tin
 
-&emsp; **Lớp:** [lớp FCAJ của bạn]
+&emsp; **Lớp:** [FCAJ 2026]
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
@@ -28,7 +28,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày [dd/mm/yyyy] đến ngày [dd/mm/yyyy]
 
-![Ảnh đại diện](/images/avatar.png)
+![Ảnh đại diện]<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="200">
 
 ### Nội dung báo cáo
 
