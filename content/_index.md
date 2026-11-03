@@ -8,19 +8,19 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Tran Thanh Tam (Sieg)
+&emsp; **Full Name:** Tran Thanh Tam
 
 &emsp; **Student ID:** SE204818
 
-&emsp; **Phone Number:** [your phone number]
+&emsp; **Phone Number:** [0792200524]
 
-&emsp; **Email:** [your email]
+&emsp; **Email:** [thanhtamtran1406@gmail.com]
 
 &emsp; **University:** FPT University, Ho Chi Minh City
 
 &emsp; **Major:** Information Assurance (Cybersecurity)
 
-&emsp; **Class:** [your FCAJ class]
+&emsp; **Class:** [IA1903]
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
@@ -28,7 +28,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From [dd/mm/yyyy] to [dd/mm/yyyy]
 
-![Profile picture](/images/avatar.png)
+![Profile picture](/fcj-workshop-sieg/images/avatar.png)
 
 ### Report Content
 
