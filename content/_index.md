@@ -20,13 +20,13 @@ chapter: false
 
 &emsp; **Major:** Information Assurance (Cybersecurity)
 
-&emsp; **Class:** [IA1903]
+&emsp; **Class:** [FCAJ FPT Season 6]
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From [dd/mm/yyyy] to [dd/mm/yyyy]
+&emsp; **Internship Duration:** From [07/09/2026] to [14/12/2026]
 
 <img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
