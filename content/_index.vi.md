@@ -28,7 +28,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày [dd/mm/yyyy] đến ngày [dd/mm/yyyy]
 
-![Ảnh đại diện]<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="200">
+<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
 ### Nội dung báo cáo
 
