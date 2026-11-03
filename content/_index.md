@@ -28,7 +28,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From [dd/mm/yyyy] to [dd/mm/yyyy]
 
-![Profile picture]<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="200">
+<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
 ### Report Content
 
