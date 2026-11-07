@@ -8,27 +8,27 @@ chapter: false
 # Báo cáo thực tập
 
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Trần Thanh Tâm (Sieg)
+&emsp; **Họ và tên:** Trần Thanh Tâm
 
 &emsp; **MSSV:** SE204818
 
-&emsp; **Số điện thoại:** [số điện thoại của bạn]
+&emsp; **Số điện thoại:** [0792200524]
 
-&emsp; **Email:** [email của bạn]
+&emsp; **Email:** [thanhtamtran1406@gmail.com]
 
 &emsp; **Trường:** Đại học FPT, TP.HCM
 
 &emsp; **Ngành:** An toàn thông tin
 
-&emsp; **Lớp:** [lớp FCAJ của bạn]
+&emsp; **Lớp:** [FCAJ FPT Season 2026]
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày [dd/mm/yyyy] đến ngày [dd/mm/yyyy]
+&emsp; **Thời gian thực tập:** Từ ngày [07/09/2026] đến ngày [14/12/2026]
 
-![Ảnh đại diện](/images/avatar.png)
+<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
 ### Nội dung báo cáo
 

@@ -8,27 +8,27 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Tran Thanh Tam (Sieg)
+&emsp; **Full Name:** Tran Thanh Tam
 
 &emsp; **Student ID:** SE204818
 
-&emsp; **Phone Number:** [your phone number]
+&emsp; **Phone Number:** [0792200524]
 
-&emsp; **Email:** [your email]
+&emsp; **Email:** [thanhtamtran1406@gmail.com]
 
 &emsp; **University:** FPT University, Ho Chi Minh City
 
 &emsp; **Major:** Information Assurance (Cybersecurity)
 
-&emsp; **Class:** [your FCAJ class]
+&emsp; **Class:** [FCAJ FPT Season 6]
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From [dd/mm/yyyy] to [dd/mm/yyyy]
+&emsp; **Internship Duration:** From [07/09/2026] to [14/12/2026]
 
-![Profile picture](/images/avatar.png)
+<img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
 ### Report Content
 
