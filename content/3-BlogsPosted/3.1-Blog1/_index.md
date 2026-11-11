@@ -35,5 +35,3 @@ References:
 2. IAM roles: <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html>
 3. Policy evaluation logic (explicit deny): <https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html>
 4. IAM Access Analyzer: <https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html>
-
-#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #IAM #CloudSecurity #LeastPrivilege
