@@ -14,7 +14,7 @@ Khi mới học AWS, mình thường làm mọi thứ bằng một tài khoản 
 
 Điểm thứ ba là nguyên tắc đặc quyền tối thiểu. Thay vì gắn policy cho phép mọi hành động trên mọi tài nguyên, ta chỉ cho phép đúng hành động và đúng tài nguyên cần dùng. Hình minh họa bên dưới mô tả ý này: IAM user và IAM role cùng gắn một policy, policy cho phép s3:GetObject nhưng từ chối s3:DeleteObject trên một S3 bucket. Theo logic đánh giá policy của AWS, một lệnh từ chối tường minh (explicit deny) luôn thắng lệnh cho phép, nên có thể dùng để chặn các hành động nhạy cảm.
 
-<!-- TODO: chèn sơ đồ iam-least-privilege (IAM user và IAM role gắn policy cho phép s3:GetObject, từ chối s3:DeleteObject trên S3 bucket) -->
+<img src="/fcj-workshop-sieg/images/3-BlogsPosted/3.1-Blog1/iam-least-privilege.png" alt="Sơ đồ: IAM user và IAM role cùng gắn một policy cho phép s3:GetObject và từ chối s3:DeleteObject" style="max-width:100%; width:700px;">
 
 Mình sẽ kiểm chứng bằng một lab nhỏ, không dựa vào kết luận từ lý thuyết:
 

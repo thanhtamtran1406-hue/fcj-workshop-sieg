@@ -14,7 +14,7 @@ The second point is the type of credentials. Long-term access keys are convenien
 
 The third point is the principle of least privilege. Instead of attaching a policy that allows every action on every resource, we allow only the exact actions on the exact resources that are needed. The figure below illustrates this: an IAM user and an IAM role share one policy that allows s3:GetObject but denies s3:DeleteObject on an S3 bucket. According to AWS policy evaluation logic, an explicit deny always wins over an allow, so it can be used to block sensitive actions.
 
-<!-- TODO: add the iam-least-privilege diagram (IAM user and IAM role with a policy that allows s3:GetObject and denies s3:DeleteObject on an S3 bucket) -->
+<img src="/fcj-workshop-sieg/images/3-BlogsPosted/3.1-Blog1/iam-least-privilege.png" alt="Diagram: IAM user and IAM role share a policy that allows s3:GetObject and denies s3:DeleteObject" style="max-width:100%; width:700px;">
 
 I will verify this with a small lab rather than rely on conclusions from theory:
 
