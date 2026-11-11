@@ -26,7 +26,7 @@ chapter: false
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày [07/09/2026] đến ngày [14/12/2026]
+&emsp; **Thời gian thực tập:** Từ ngày [14/09/2026] đến ngày [14/12/2026]
 
 <img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
