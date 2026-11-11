@@ -1,38 +1,28 @@
 ---
 title: "Proposal"
-date: 2026-11-03
+date: 2026-11-11
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
-# Restaurant Website on AWS Amplify
-## A secure, CI/CD-driven web deployment on AWS
+### 1. Overview of the Problem / Solution
+[Overview.] Group project: restaurant website deployed on AWS Amplify: https://main.d2rkhtb7c0k5r7.amplifyapp.com/
 
-### 1. Executive Summary
-[Summarize the project in 3-4 sentences: who it is for, what it does, which AWS services it uses.]
+### 2. Objectives & Scope
+[Objectives and scope.]
 
-### 2. Problem Statement
-**What is the problem?** [Describe the problem the restaurant website solves.]
+### 3. Problem to Solve
+[Problem.]
 
-**The solution.** The website is hosted on AWS Amplify and deployed automatically from the Git repository: https://main.d2rkhtb7c0k5r7.amplifyapp.com/
+### 4. Preliminary Solution Architecture
+[Architecture diagram and description.]
 
-**Benefits and return on investment.** [Cost, time saved, maintainability.]
+### 5. Plan & Timeline
+[Plan and timeline.]
 
-### 3. Solution Architecture
-[Architecture diagram: Git repository -> AWS Amplify (build & hosting) -> CloudFront CDN -> users. Add images to `static/images/2-Proposal/`.]
+### 6. Cost Estimation
+[Budget and cost table.]
 
-### 4. Technical Implementation
-[Implementation phases, tools, and responsibilities.]
-
-### 5. Timeline & Milestones
-[Week-by-week plan.]
-
-### 6. Budget Estimation
-[Use the AWS Pricing Calculator and paste the link.]
-
-### 7. Risk Assessment
-[Main risks and mitigation, including security risks.]
-
-### 8. Expected Outcomes
-[Measurable results.]
+### 7. Risks & Mitigation
+[Risks and mitigation plans.]

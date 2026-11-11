@@ -1,29 +1,18 @@
 ---
 title: "Tự đánh giá"
-date: 2026-11-03
+date: 2026-11-11
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong chương trình, mình thực hiện [dự án], qua đó cải thiện các kỹ năng [kỹ năng].
-
-| STT | Tiêu chí | Tốt | Khá | Trung bình |
-| --- | -------- | --- | --- | ---------- |
-| 1 | **Kiến thức và kỹ năng chuyên môn** | ☐ | ☐ | ☐ |
-| 2 | **Khả năng học hỏi** | ☐ | ☐ | ☐ |
-| 3 | **Sự chủ động** | ☐ | ☐ | ☐ |
-| 4 | **Trách nhiệm** | ☐ | ☐ | ☐ |
-| 5 | **Kỷ luật** | ☐ | ☐ | ☐ |
-| 6 | **Tinh thần cầu tiến** | ☐ | ☐ | ☐ |
-| 7 | **Giao tiếp** | ☐ | ☐ | ☐ |
-| 8 | **Làm việc nhóm** | ☐ | ☐ | ☐ |
-| 9 | **Tác phong chuyên nghiệp** | ☐ | ☐ | ☐ |
-| 10 | **Giải quyết vấn đề** | ☐ | ☐ | ☐ |
-| 11 | **Đóng góp cho dự án/nhóm** | ☐ | ☐ | ☐ |
-| 12 | **Tổng thể** | ☐ | ☐ | ☐ |
-
-### Cần cải thiện
-
-* [Điểm 1]
-* [Điểm 2]
+| STT | Tiêu chí | Tốt | Khá | Trung bình | Nhận xét |
+| --- | -------- | --- | --- | ---------- | -------- |
+| 1 | Kiến thức chuyên môn | ☐ | ☐ | ☐ | [Nhận xét] |
+| 2 | Khả năng tự học & nghiên cứu | ☐ | ☐ | ☐ | [Nhận xét] |
+| 3 | Tính chủ động trong công việc | ☐ | ☐ | ☐ | [Nhận xét] |
+| 4 | Kỷ luật & tuân thủ quy định | ☐ | ☐ | ☐ | [Nhận xét] |
+| 5 | Kỹ năng giao tiếp | ☐ | ☐ | ☐ | [Nhận xét] |
+| 6 | Làm việc nhóm (Teamwork) | ☐ | ☐ | ☐ | [Nhận xét] |
+| 7 | Năng lực giải quyết vấn đề | ☐ | ☐ | ☐ | [Nhận xét] |
+| 8 | Đóng góp cho Workshop | ☐ | ☐ | ☐ | [Nhận xét] |

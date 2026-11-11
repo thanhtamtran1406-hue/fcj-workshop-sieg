@@ -1,11 +1,9 @@
 ---
-title: "Chuẩn bị"
-date: 2026-11-03
+title: "Prerequisite (Điều kiện tiên quyết)"
+date: 2026-11-11
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
 ---
 
-* Tài khoản AWS
-* Tài khoản GitHub và repository của website nhà hàng
-* [Công cụ khác: Node.js, Git, ...]
+[Tài khoản, công cụ, quyền hạn.]
