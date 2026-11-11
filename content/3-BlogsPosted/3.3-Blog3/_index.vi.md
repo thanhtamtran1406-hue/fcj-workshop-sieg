@@ -33,5 +33,3 @@ Nguồn tham khảo:
 4. Understanding Amazon GuardDuty findings: <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html>
 5. Generating sample findings in GuardDuty: <https://docs.aws.amazon.com/guardduty/latest/ug/sample_findings.html>
 6. Pricing in GuardDuty (30-day free trial): <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-pricing.html>
-
-#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CloudTrail #GuardDuty #CloudSecurity
