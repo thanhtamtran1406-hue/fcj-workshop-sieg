@@ -35,5 +35,3 @@ Nguồn tham khảo:
 4. Activating user-defined cost allocation tags: <https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html>
 5. Amazon VPC pricing (NAT Gateway, public IPv4): <https://aws.amazon.com/vpc/pricing/>
 6. Why am I charged for Amazon EBS when all my instances are stopped?: <https://www.repost.aws/knowledge-center/ebs-charge-stopped-instance>
-
-#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CostOptimization #AWSBudgets #CostExplorer
