@@ -12,10 +12,10 @@ pre: " <b> 4.1. </b> "
 - **Role:** Attendee
 
 ### Main Content
-[Main content learned]
+Sharing of knowledge by the senior members of the FCAJ team.
 
 ### Check-in Photo
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.1-Event1/event1.jpg" alt="Photo at the AWS Cloud and AI Day watch party" style="max-width:100%; width:600px;">
 
 ### Lessons Learned / Personal Contribution
-[Lessons learned]
+New knowledge related to the field I am studying.

@@ -12,10 +12,10 @@ pre: " <b> 4.1. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-[Nội dung chính]
+Chia sẻ về kiến thức của các anh chị trong FCAJ team.
 
 ### Hình ảnh check-in
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.1-Event1/event1.jpg" alt="Ảnh tại AWS Cloud and AI Day - Watch Party" style="max-width:100%; width:600px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-[Bài học rút ra]
+Các kiến thức mới liên quan đến ngành nghề đang theo học.

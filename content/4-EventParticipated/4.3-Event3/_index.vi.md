@@ -12,10 +12,10 @@ pre: " <b> 4.3. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-[Nội dung chính]
+Q&A with Dr. Werner Vogels.
 
 ### Hình ảnh check-in
-<img src="/fcj-workshop-sieg/images/4-EventParticipated/4.3-Event3/event3.jpg" alt="Ảnh chụp chung tại Fireside Chat with Dr. Werner" style="max-width:100%; width:600px;">
+<img src="/fcj-workshop-sieg/images/4-EventParticipated/4.3-Event3/event3.jpg" alt="Ảnh chụp chung tại Fireside Chat with Dr. Werner" style="max-width:100%; width:1000px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-[Bài học rút ra]
+Các kinh nghiệm và trải nghiệm liên quan tới hệ thống AWS vào những ngày đầu khi Dr. Werner mới tham gia công ty.

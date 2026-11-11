@@ -12,10 +12,10 @@ pre: " <b> 4.3. </b> "
 - **Role:** Attendee
 
 ### Main Content
-[Main content learned]
+Q&A with Dr. Werner Vogels.
 
 ### Check-in Photo
-<img src="/fcj-workshop-sieg/images/4-EventParticipated/4.3-Event3/event3.jpg" alt="Group photo at the Fireside Chat with Dr. Werner" style="max-width:100%; width:600px;">
+<img src="/fcj-workshop-sieg/images/4-EventParticipated/4.3-Event3/event3.jpg" alt="Group photo at the Fireside Chat with Dr. Werner" style="max-width:100%; width:1000px;">
 
 ### Lessons Learned / Personal Contribution
-[Lessons learned]
+Experiences related to the AWS system in its early days, when Dr. Werner had just joined the company.

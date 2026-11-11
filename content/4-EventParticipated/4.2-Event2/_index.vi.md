@@ -12,10 +12,10 @@ pre: " <b> 4.2. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-[Nội dung chính]
+Làm mô hình gấu nhồi bông thông minh phát ra âm thanh khi tác động.
 
 ### Hình ảnh check-in
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.2-Event2/event2.jpg" alt="Ảnh tại sự kiện Smart Plushies for Children" style="max-width:100%; width:600px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-[Bài học rút ra]
+Sử dụng Microsoft MakeCode để luyện tập cách tạo dựng mạch điện đơn giản và làm đồ chơi thông minh.
