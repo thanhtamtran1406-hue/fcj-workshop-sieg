@@ -6,4 +6,6 @@ chapter: false
 pre: " <b> 5.7. </b> "
 ---
 
-[Demo link / Video.]
+- **Website đang chạy (Amplify):** <https://main.d2rkhtb7c0k5r7.amplifyapp.com/>
+- **Mã nguồn:** <https://github.com/ndthuy21/aurel-restaurant>
+- **Video demo:** [link video]
