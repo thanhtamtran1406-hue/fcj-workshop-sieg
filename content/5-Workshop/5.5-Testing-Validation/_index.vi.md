@@ -23,11 +23,11 @@ pnpm test:smoke     # server riêng ở cổng 3100, dữ liệu tạm
 7. Kiểm tra log Lambda trong CloudWatch và log build, SSR của Amplify, không chỉ dựa vào thông báo trên frontend.
 
 ### Logs
-- Log Lambda trong CloudWatch (lỗi gửi thư được ghi theo mã yêu cầu, không ghi nội dung email).
+- Log Lambda trong CloudWatch, lưu 14 ngày (lỗi gửi thư được ghi theo mã yêu cầu, không ghi nội dung email).
 - Log build và SSR của Amplify.
 
 ### Metrics
-[Bổ sung các metrics đã xem, kèm ảnh chụp màn hình.]
+- Basic metrics trong CloudWatch cho Lambda và Amplify.
 
 ### Alerts
-[Bổ sung các cảnh báo đã cấu hình, kèm ảnh chụp màn hình.]
+- Chưa cấu hình alarm riêng cho AUREL.

@@ -23,11 +23,11 @@ pnpm test:smoke     # separate server on port 3100, temporary data
 7. Check the Lambda logs in CloudWatch and the Amplify build and SSR logs, not only the frontend messages.
 
 ### Logs
-- Lambda logs in CloudWatch (email delivery errors are logged by request code, without email content).
+- Lambda logs in CloudWatch, retention 14 days (email delivery errors are logged by request code, without email content).
 - Amplify build and SSR logs.
 
 ### Metrics
-[Add the metrics you reviewed, with screenshots.]
+- Basic metrics in CloudWatch for Lambda and Amplify.
 
 ### Alerts
-[Add the alerts you configured, with screenshots.]
+- No dedicated AUREL alarm has been configured yet.
