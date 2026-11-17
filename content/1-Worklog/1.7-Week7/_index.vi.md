@@ -1,25 +1,25 @@
 ---
 title: "Worklog Tuần 7"
-date: 2026-11-03
+date: 2026-11-15
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
-### Mục tiêu tuần 7:
+### Tuần 7 (05/10 - 11/10/2026)
 
-* [Mục tiêu 1]
-* [Mục tiêu 2]
+### Công việc đã làm
+| Thứ | Ngày | Công việc đã làm | Tài liệu tham khảo |
+| --- | --- | --- | --- |
+| Thứ 2 | 05/10/2026 | Đăng Blog 1 lên nhóm AWS Study Group | [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) |
+| Thứ 4 | 07/10/2026 | Đăng Blog 2 lên nhóm AWS Study Group | [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) |
+| Thứ 5 | 08/10/2026 | Đăng Blog 3 lên nhóm AWS Study Group | [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) |
+| Thứ 6 | 09/10/2026 | Chạy thử dự án AUREL trên máy (pnpm install, pnpm setup, pnpm dev) | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | -------------- |
-| 2   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 3   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 4   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 5   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 6   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
+### Kết quả đạt được
+* Đăng đủ 3 blog lên cộng đồng
+* Dự án chạy được trên máy
 
-### Kết quả đạt được tuần 7:
-
-* [Những gì đã học / hoàn thành]
+### Tài liệu tham khảo
+* [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj)
+* [AUREL repository](https://github.com/ndthuy21/aurel-restaurant)

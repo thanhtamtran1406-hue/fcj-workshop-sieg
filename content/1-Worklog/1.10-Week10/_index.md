@@ -1,25 +1,23 @@
 ---
 title: "Week 10 Worklog"
-date: 2026-11-03
+date: 2026-11-15
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Week 10 Objectives:
+### Week 10 (26/10 - 01/11/2026)
 
-* [Objective 1]
-* [Objective 2]
+### Work done
+| Day | Date | Task | References |
+| --- | --- | --- | --- |
+| Mon | 26/10/2026 | Attended Smart Plushies for Children (09:00, floor 36 Bitexco): built a smart plush bear model with Microsoft MakeCode | - |
+| Wed | 28/10/2026 | Ran local checks (pnpm check, pnpm build, pnpm test:smoke) | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
+| Fri | 30/10/2026 | Tested on AWS: menu, reservations, admin, image upload, and checked Lambda and Amplify logs | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
 
-### Tasks to be carried out this week:
-| Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ------------------ |
-| 2   | - [Task]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 3   | - [Task]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 4   | - [Task]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 5   | - [Task]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 6   | - [Task]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
+### Results
+* Attended Event 2
+* Completed local and AWS testing
 
-### Week 10 Achievements:
-
-* [What I learned / completed]
+### References
+* [AUREL repository](https://github.com/ndthuy21/aurel-restaurant)

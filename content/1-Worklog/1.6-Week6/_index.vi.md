@@ -1,25 +1,23 @@
 ---
 title: "Worklog Tuần 6"
-date: 2026-11-03
+date: 2026-11-15
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-### Mục tiêu tuần 6:
+### Tuần 6 (28/09 - 04/10/2026)
 
-* [Mục tiêu 1]
-* [Mục tiêu 2]
+### Công việc đã làm
+| Thứ | Ngày | Công việc đã làm | Tài liệu tham khảo |
+| --- | --- | --- | --- |
+| Thứ 2 | 28/09/2026 | Cùng nhóm chọn đề tài workshop: website nhà hàng AUREL trên AWS Amplify; đọc README của dự án | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
+| Thứ 3 | 29/09/2026 | Tham dự AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City (09:00, tầng 26 Bitexco) | - |
+| Thứ 6 | 02/10/2026 | Tham dự Fireside Chat with Dr. Werner (09:00, tầng 26 Bitexco) | - |
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | -------------- |
-| 2   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 3   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 4   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 5   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
-| 6   | - [Công việc]  | [dd/mm/yyyy] | [dd/mm/yyyy] | [link] |
+### Kết quả đạt được
+* Chốt đề tài workshop của nhóm
+* Tham dự 2 sự kiện (Event 1 và Event 3)
 
-### Kết quả đạt được tuần 6:
-
-* [Những gì đã học / hoàn thành]
+### Tài liệu tham khảo
+* [AUREL repository](https://github.com/ndthuy21/aurel-restaurant)
