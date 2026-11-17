@@ -1,23 +1,28 @@
 ---
 title: "Week 10 Worklog"
-date: 2026-11-15
+date: 2026-11-17
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Week 10 (26/10 - 01/11/2026)
+### Week 10 Objectives:
 
-### Work done
-| Day | Date | Task | References |
-| --- | --- | --- | --- |
-| Mon | 26/10/2026 | Attended Smart Plushies for Children (09:00, floor 36 Bitexco): built a smart plush bear model with Microsoft MakeCode | - |
-| Wed | 28/10/2026 | Ran local checks (pnpm check, pnpm build, pnpm test:smoke) | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
-| Fri | 30/10/2026 | Tested on AWS: menu, reservations, admin, image upload, and checked Lambda and Amplify logs | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant) |
+* Finalize the architecture diagram and the report website content
+* Attend Event 4
 
-### Results
-* Attended Event 2
-* Completed local and AWS testing
+### Tasks to be carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Finalize the workshop architecture diagram | 09/11/2026 | 09/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Prepare the 3 blogs and diagrams for the website | 10/11/2026 | 10/11/2026 | [https://www.facebook.com/groups/awsstudygroupfcj](https://www.facebook.com/groups/awsstudygroupfcj) |
+| 4 | - Add the 3 blogs (Vietnamese and English) and diagrams to the report website | 11/11/2026 | 11/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 5 | - Write the Workshop section on the website<br>&emsp;+ Overview, Prerequisite, Architecture & Data Flow<br>&emsp;+ Lab Guide, Testing & Validation, Clean-up, Demo | 12/11/2026 | 12/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Add the architecture diagram (Vietnamese and English versions) and remove old template pages | 13/11/2026 | 13/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Attend FCAJ x FPTU: Cloud Mastery 1 (09:00, floor 26 Bitexco) | 14/11/2026 | 14/11/2026 |  |
+| CN | - Add Event 4 to the report website | 15/11/2026 | 15/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
-### References
-* [AUREL repository](https://github.com/ndthuy21/aurel-restaurant)
+### Week 10 Achievements:
+
+* Attended Event 4 (4 events in total)
+* The report website has the Blogs, Events and Workshop sections

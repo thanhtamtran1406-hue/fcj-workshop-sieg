@@ -1,24 +1,27 @@
 ---
 title: "Worklog Tuần 9"
-date: 2026-11-15
+date: 2026-11-17
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-### Tuần 9 (19/10 - 25/10/2026)
+### Mục tiêu tuần 9:
 
-### Công việc đã làm
-| Thứ | Ngày | Công việc đã làm | Tài liệu tham khảo |
-| --- | --- | --- | --- |
-| Thứ 2 | 19/10/2026 | Chuẩn bị SES: xác minh email gửi trong sandbox | [Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) |
-| Thứ 4 | 21/10/2026 | Triển khai frontend trên Amplify Hosting và cấu hình biến môi trường | [AWS Amplify Hosting](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
-| Thứ 6 | 23/10/2026 | Cập nhật FrontendOrigin (CORS) bằng sam deploy và deploy lại frontend | [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html), [AWS Amplify Hosting](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
+* Kiểm thử workshop
+* Tạo website báo cáo từ template FCAJ
 
-### Kết quả đạt được
-* Website chạy trên Amplify và kết nối được với backend
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 2 | - Kiểm thử trên máy<br>&emsp;+ pnpm check, pnpm build, pnpm test:smoke<br>&emsp;+ Kiểm tra /menu trả về 100 món và không có lỗi CORS | 02/11/2026 | 02/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Tạo repository và website báo cáo từ template FCAJ<br>&emsp;+ Cài Hugo và clone template<br>&emsp;+ Bật GitHub Pages bằng workflow deploy | 03/11/2026 | 03/11/2026 | [https://github.com/thienluhoan/fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/)<br>[https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
+| 4 | - Cấu hình website báo cáo<br>&emsp;+ baseURL, ảnh đại diện, ngôn ngữ | 04/11/2026 | 04/11/2026 | [https://gohugo.io/documentation/](https://gohugo.io/documentation/) |
+| 5 | - Kiểm thử đặt bàn và admin trên AWS<br>&emsp;+ Đặt bàn, kiểm tra DynamoDB và email SES<br>&emsp;+ Admin đăng nhập và xác nhận đặt bàn | 05/11/2026 | 05/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Kiểm thử upload ảnh S3 và kiểm tra log<br>&emsp;+ PUT bằng URL ký và xem trước ảnh<br>&emsp;+ Log Lambda trong CloudWatch và log build, SSR của Amplify | 06/11/2026 | 06/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Thêm 3 event đã tham dự vào website báo cáo<br>&emsp;+ Nội dung chính và ảnh check-in | 07/11/2026 | 07/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
-### Tài liệu tham khảo
-* [Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html)
-* [AWS Amplify Hosting](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)
-* [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+### Kết quả đạt được tuần 9:
+
+* Hoàn thành kiểm thử trên máy và trên AWS
+* Website báo cáo chạy trên GitHub Pages

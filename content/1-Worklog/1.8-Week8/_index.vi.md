@@ -1,28 +1,26 @@
 ---
 title: "Worklog Tuần 8"
-date: 2026-11-15
+date: 2026-11-17
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-### Tuần 8 (12/10 - 18/10/2026)
+### Mục tiêu tuần 8:
 
-### Công việc đã làm
-| Thứ | Ngày | Công việc đã làm | Tài liệu tham khảo |
-| --- | --- | --- | --- |
-| Thứ 2 | 12/10/2026 | Tìm hiểu các thành phần backend: API Gateway HTTP API, Lambda, DynamoDB, Cognito | [API Gateway HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html), [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html), [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html), [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
-| Thứ 4 | 14/10/2026 | Build và deploy backend bằng AWS SAM (sam build, sam deploy --guided) và đọc outputs của stack | [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) |
-| Thứ 6 | 16/10/2026 | Nạp dữ liệu thực đơn vào DynamoDB và tạo user admin trong Cognito | [AUREL repository](https://github.com/ndthuy21/aurel-restaurant), [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) |
+* Tham dự sự kiện
+* Triển khai frontend trên Amplify Hosting, chuẩn bị SES và cập nhật CORS
 
-### Kết quả đạt được
-* Backend chạy trên AWS
-* Có dữ liệu thực đơn và tài khoản admin
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 2 | - Tham dự sự kiện Smart Plushies for Children (09:00, tầng 36 Bitexco)<br>&emsp;+ Làm mô hình gấu nhồi bông thông minh phát ra âm thanh khi tác động<br>&emsp;+ Dùng Microsoft MakeCode | 26/10/2026 | 26/10/2026 |  |
+| 3 | - Chuẩn bị SES<br>&emsp;+ Xác minh SenderEmail<br>&emsp;+ Hiểu giới hạn của SES sandbox | 27/10/2026 | 27/10/2026 | [https://docs.aws.amazon.com/ses/latest/dg/Welcome.html](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) |
+| 4 | - Kết nối repository với Amplify Hosting<br>&emsp;+ Chọn Node 22, dùng amplify.yml | 28/10/2026 | 28/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
+| 5 | - Cấu hình biến môi trường và build<br>&emsp;+ DATA_MODE, API_BASE_URL, NEXT_PUBLIC_API_BASE_URL<br>&emsp;+ COGNITO_CLIENT_ID, COGNITO_USER_POOL_ID, APP_AWS_REGION, APP_ORIGIN | 29/10/2026 | 29/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Cập nhật FrontendOrigin (CORS) bằng sam deploy --guided<br>- Deploy lại frontend và kiểm tra website kết nối với backend | 30/10/2026 | 30/10/2026 | [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)<br>[https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
 
-### Tài liệu tham khảo
-* [API Gateway HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html)
-* [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
-* [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
-* [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html)
-* [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
-* [AUREL repository](https://github.com/ndthuy21/aurel-restaurant)
+### Kết quả đạt được tuần 8:
+
+* Tham dự Event 2
+* Website chạy trên Amplify và kết nối được với backend

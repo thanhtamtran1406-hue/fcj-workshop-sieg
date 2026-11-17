@@ -1,26 +1,26 @@
 ---
 title: "Week 1 Worklog"
-date: 2026-11-15
+date: 2026-11-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Week 1 (24/08 - 30/08/2026)
+### Week 1 Objectives:
 
-### Work done
-| Day | Date | Task | References |
-| --- | --- | --- | --- |
-| Mon | 24/08/2026 | Joined the FCAJ program and read the minimum sections required in the internship report | [FCAJ report rules](https://hcm-rules.awsfcaj.com/project/content) |
-| Wed | 26/08/2026 | Created an AWS account; installed AWS CLI v2, AWS SAM CLI, Node.js and Git | [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) |
-| Fri | 28/08/2026 | Reviewed an overview of core AWS services | [Getting started with AWS](https://aws.amazon.com/getting-started/) |
+* Get acquainted with FCAJ members and understand the program rules
+* Prepare the AWS account and lab tools
 
-### Results
+### Tasks to be carried out this week:
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Get acquainted with FCAJ members<br>- Read and take note of the rules and the minimum report sections | 07/09/2026 | 07/09/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 3 | - Learn about AWS and its types of services<br>&emsp;+ Compute<br>&emsp;+ Storage<br>&emsp;+ Networking<br>&emsp;+ Database | 08/09/2026 | 08/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)<br>[https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
+| 4 | - Create an AWS account<br>- Get familiar with the AWS Management Console | 09/09/2026 | 09/09/2026 | [https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
+| 5 | - Install the lab tools<br>&emsp;+ AWS CLI v2<br>&emsp;+ AWS SAM CLI<br>&emsp;+ Node.js and Git | 10/09/2026 | 10/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)<br>[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) |
+| 6 | - Practice basic AWS CLI<br>&emsp;+ Configure credentials<br>&emsp;+ Run commands to verify the account configuration | 11/09/2026 | 11/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
+
+### Week 1 Achievements:
+
 * AWS account and lab tools are ready
 * Understood the sections required in the report
-
-### References
-* [FCAJ report rules](https://hcm-rules.awsfcaj.com/project/content)
-* [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-* [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
-* [Getting started with AWS](https://aws.amazon.com/getting-started/)

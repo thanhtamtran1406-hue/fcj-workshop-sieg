@@ -1,26 +1,26 @@
 ---
 title: "Worklog Tuần 1"
-date: 2026-11-15
+date: 2026-11-17
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-### Tuần 1 (24/08 - 30/08/2026)
+### Mục tiêu tuần 1:
 
-### Công việc đã làm
-| Thứ | Ngày | Công việc đã làm | Tài liệu tham khảo |
-| --- | --- | --- | --- |
-| Thứ 2 | 24/08/2026 | Tham gia chương trình FCAJ và đọc các phần tối thiểu cần có trong báo cáo thực tập | [FCAJ report rules](https://hcm-rules.awsfcaj.com/project/content) |
-| Thứ 4 | 26/08/2026 | Tạo tài khoản AWS; cài AWS CLI v2, AWS SAM CLI, Node.js và Git | [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html), [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) |
-| Thứ 6 | 28/08/2026 | Tìm hiểu tổng quan các dịch vụ AWS cơ bản | [Getting started with AWS](https://aws.amazon.com/getting-started/) |
+* Làm quen với các thành viên FCAJ và nắm quy định của chương trình
+* Chuẩn bị tài khoản AWS và công cụ làm lab
 
-### Kết quả đạt được
+### Các công việc cần triển khai trong tuần này:
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 2 | - Làm quen với các thành viên FCAJ<br>- Đọc và ghi chú quy định, các phần tối thiểu cần có trong báo cáo | 07/09/2026 | 07/09/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 3 | - Tìm hiểu tổng quan AWS và các nhóm dịch vụ<br>&emsp;+ Compute<br>&emsp;+ Storage<br>&emsp;+ Networking<br>&emsp;+ Database | 08/09/2026 | 08/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)<br>[https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
+| 4 | - Tạo tài khoản AWS<br>- Làm quen với AWS Management Console | 09/09/2026 | 09/09/2026 | [https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
+| 5 | - Cài đặt công cụ làm lab<br>&emsp;+ AWS CLI v2<br>&emsp;+ AWS SAM CLI<br>&emsp;+ Node.js và Git | 10/09/2026 | 10/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)<br>[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) |
+| 6 | - Thực hành AWS CLI cơ bản<br>&emsp;+ Cấu hình thông tin xác thực<br>&emsp;+ Chạy các lệnh kiểm tra cấu hình tài khoản | 11/09/2026 | 11/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
+
+### Kết quả đạt được tuần 1:
+
 * Có tài khoản AWS và đầy đủ công cụ làm lab
 * Nắm được các phần cần có trong báo cáo
-
-### Tài liệu tham khảo
-* [FCAJ report rules](https://hcm-rules.awsfcaj.com/project/content)
-* [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-* [Install the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html)
-* [Getting started with AWS](https://aws.amazon.com/getting-started/)
