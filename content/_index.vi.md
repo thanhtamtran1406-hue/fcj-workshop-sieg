@@ -12,21 +12,21 @@ chapter: false
 
 &emsp; **MSSV:** SE204818
 
-&emsp; **Số điện thoại:** [0792200524]
+&emsp; **Số điện thoại:** 0792200524
 
-&emsp; **Email:** [thanhtamtran1406@gmail.com]
+&emsp; **Email:** thanhtamtran1406@gmail.com
 
 &emsp; **Trường:** Đại học FPT, TP.HCM
 
 &emsp; **Ngành:** An toàn thông tin
 
-&emsp; **Lớp:** [FCAJ FPT Season 4]
+&emsp; **Lớp:** FCAJ FPT Season 4
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
 &emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ ngày [14/09/2026] đến ngày [14/12/2026]
+&emsp; **Thời gian thực tập:** 14/09/2026 - 14/12/2026
 
 <img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
