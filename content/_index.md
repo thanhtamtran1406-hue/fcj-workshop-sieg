@@ -12,21 +12,21 @@ chapter: false
 
 &emsp; **Student ID:** SE204818
 
-&emsp; **Phone Number:** [0792200524]
+&emsp; **Phone Number:** 0792200524
 
-&emsp; **Email:** [thanhtamtran1406@gmail.com]
+&emsp; **Email:** thanhtamtran1406@gmail.com
 
 &emsp; **University:** FPT University, Ho Chi Minh City
 
-&emsp; **Major:** Information Assurance (Cybersecurity)
+&emsp; **Major:** Information Assurance
 
-&emsp; **Class:** [FCAJ FPT Season 4]
+&emsp; **Class:** FCAJ FPT Season 4
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
 &emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From [14/09/2026] to [14/12/2026]
+&emsp; **Internship Duration:** 14/09/2026 - 14/12/2026
 
 <img src="/fcj-workshop-sieg/images/avatar.png" alt="Profile picture" width="400">
 
