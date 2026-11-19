@@ -9,7 +9,10 @@ pre: " <b> 3. </b> "
 Blogs I posted to the [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) community:
 
 ### [Blog 1 - IAM for beginners: if an access key leaks, what is the maximum damage?](3.1-Blog1/)
+Original post: <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333529884078637/>
 
 ### [Blog 2 - Learning AWS without burning your wallet: easy-to-forget charges when doing labs](3.2-Blog2/)
+Original post: <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333732477391711/>
 
 ### [Blog 3 - CloudTrail and GuardDuty: how do you know who did what in an AWS account?](3.3-Blog3/)
+Original post: <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2334665957298363/>

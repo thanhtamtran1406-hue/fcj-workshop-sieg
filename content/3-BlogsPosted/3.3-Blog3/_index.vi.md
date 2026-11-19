@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
+**Bài đăng gốc (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2334665957298363/>
+
 Sau khi tìm hiểu IAM, mình có một câu hỏi tiếp theo: nếu ai đó dùng khóa của mình, làm sao mình biết họ đã làm gì và khi nào? Câu hỏi này dẫn mình đến AWS CloudTrail và Amazon GuardDuty.
 
 CloudTrail ghi lại các lệnh gọi API trong tài khoản, dù đến từ console, CLI hay SDK. Mỗi sự kiện cho biết ai gọi, gọi gì, từ địa chỉ IP nào, vào lúc nào và có thành công hay không. Mặc định, trang Event history cho xem các management event trong 90 ngày gần nhất tại từng Region và không tính phí khi xem. Muốn có bản ghi liên tục quá 90 ngày, cần tạo trail để ghi log vào S3. AWS khuyến nghị dùng trail nhiều Region để không bỏ sót hoạt động. Đánh đổi là một bản sao management event gửi vào S3 không bị CloudTrail tính phí, nhưng mình vẫn phải trả phí lưu trữ S3 và chịu trách nhiệm bảo vệ bucket chứa log.
@@ -33,3 +35,5 @@ Nguồn tham khảo:
 4. Understanding Amazon GuardDuty findings: <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html>
 5. Generating sample findings in GuardDuty: <https://docs.aws.amazon.com/guardduty/latest/ug/sample_findings.html>
 6. Pricing in GuardDuty (30-day free trial): <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-pricing.html>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CloudTrail #GuardDuty #CloudSecurity

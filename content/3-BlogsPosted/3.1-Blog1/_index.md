@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
+**Original post (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333529884078637/>
+
 When I first started learning AWS, I usually did everything with a single account that had full permissions. That is convenient until I asked myself: if an access key on my machine or on GitHub leaks, what can whoever finds it do? That question led me to AWS Identity and Access Management (IAM).
 
 The first point is telling the types of identities apart. The root user has the highest level of access in the account, and AWS recommends using it only for a few tasks that require it, with MFA enabled. Day-to-day work should use another identity that is granted just enough permissions.
@@ -35,3 +37,5 @@ References:
 2. IAM roles: <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html>
 3. Policy evaluation logic (explicit deny): <https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html>
 4. IAM Access Analyzer: <https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #IAM #CloudSecurity #LeastPrivilege

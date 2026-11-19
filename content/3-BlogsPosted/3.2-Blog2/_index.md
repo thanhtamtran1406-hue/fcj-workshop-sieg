@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
+**Original post (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333732477391711/>
+
 When I started doing labs, what worried me most was not a wrong configuration but the bill at the end of the month. My question was: which services can cost money unexpectedly, and how do I spot it early?
 
 The charges that are easy to forget usually come from resources that are "idle but still billed". An EC2 instance left running is the most obvious example. A NAT Gateway is billed for every hour it exists and for every GB of data that passes through it, partial hours are rounded up to a full hour, and to stop being charged you must delete the NAT Gateway entirely. An EBS volume is still charged for storage while its instance is stopped, and a volume detached from an instance is still charged until it is deleted. A public IPv4 address can also incur hourly charges, even when it is not in use. Exact prices vary by Region and over time, so I always check the official AWS pricing page before drawing conclusions.
@@ -35,3 +37,5 @@ References:
 4. Activating user-defined cost allocation tags: <https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html>
 5. Amazon VPC pricing (NAT Gateway, public IPv4): <https://aws.amazon.com/vpc/pricing/>
 6. Why am I charged for Amazon EBS when all my instances are stopped?: <https://www.repost.aws/knowledge-center/ebs-charge-stopped-instance>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CostOptimization #AWSBudgets #CostExplorer

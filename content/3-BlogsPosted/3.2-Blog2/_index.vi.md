@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
+**Bài đăng gốc (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333732477391711/>
+
 Khi bắt đầu làm lab, mình lo nhất không phải là cấu hình sai mà là hóa đơn cuối tháng. Câu hỏi của mình là: dịch vụ nào dễ tốn tiền ngoài ý muốn, và làm sao phát hiện sớm?
 
 Các khoản phí hay bị bỏ quên thường nằm ở tài nguyên “nhàn rỗi nhưng vẫn tính tiền”. EC2 chạy quên tắt là ví dụ dễ thấy nhất. NAT Gateway bị tính theo mỗi giờ tồn tại và theo mỗi GB dữ liệu đi qua, giờ lẻ cũng tính tròn thành một giờ, và muốn ngừng bị tính phí phải xóa hẳn NAT Gateway. EBS volume vẫn bị tính phí lưu trữ khi instance đã dừng, và volume đã tháo khỏi instance vẫn bị tính cho đến khi bị xóa. Địa chỉ public IPv4 cũng có thể phát sinh phí theo giờ, kể cả khi không dùng. Mức giá cụ thể thay đổi theo Region và theo thời gian, nên mình luôn đối chiếu với trang giá chính thức của AWS trước khi kết luận.
@@ -35,3 +37,5 @@ Nguồn tham khảo:
 4. Activating user-defined cost allocation tags: <https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html>
 5. Amazon VPC pricing (NAT Gateway, public IPv4): <https://aws.amazon.com/vpc/pricing/>
 6. Why am I charged for Amazon EBS when all my instances are stopped?: <https://www.repost.aws/knowledge-center/ebs-charge-stopped-instance>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CostOptimization #AWSBudgets #CostExplorer

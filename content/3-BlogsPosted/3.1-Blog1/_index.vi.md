@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
+**Bài đăng gốc (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2333529884078637/>
+
 Khi mới học AWS, mình thường làm mọi thứ bằng một tài khoản duy nhất, và tài khoản đó có toàn quyền. Cách này tiện cho đến khi mình tự hỏi: nếu access key trong máy hoặc trên GitHub bị lộ thì kẻ nhặt được nó làm được những gì? Câu hỏi này dẫn mình đến AWS Identity and Access Management (IAM).
 
 Điểm đầu tiên là phân biệt các loại danh tính. Root user có quyền cao nhất trên tài khoản và theo khuyến nghị của AWS chỉ nên dùng cho một số tác vụ bắt buộc, kèm bật MFA. Công việc hằng ngày nên dùng danh tính khác, được cấp quyền vừa đủ.
@@ -35,3 +37,5 @@ Nguồn tham khảo:
 2. IAM roles: <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html>
 3. Policy evaluation logic (explicit deny): <https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html>
 4. IAM Access Analyzer: <https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #IAM #CloudSecurity #LeastPrivilege

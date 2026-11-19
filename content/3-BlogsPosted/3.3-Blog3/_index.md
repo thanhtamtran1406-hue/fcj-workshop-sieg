@@ -6,6 +6,8 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
+**Original post (AWS Study Group):** <https://www.facebook.com/groups/awsstudygroupfcj/permalink/2334665957298363/>
+
 After learning about IAM, I had a follow-up question: if someone uses my key, how do I know what they did and when? That question led me to AWS CloudTrail and Amazon GuardDuty.
 
 CloudTrail records API calls in the account, whether they come from the console, the CLI, or an SDK. Each event shows who made the call, what was called, from which IP address, at what time, and whether it succeeded. By default, the Event history page lets you view management events from the last 90 days in each Region, and viewing is free of charge. To keep a continuous record beyond 90 days, you need to create a trail that delivers logs to S3. AWS recommends using a multi-Region trail so that no activity is missed. The trade-off is that one copy of management events delivered to S3 is not charged by CloudTrail, but I still pay for S3 storage and am responsible for protecting the bucket that holds the logs.
@@ -33,3 +35,5 @@ References:
 4. Understanding Amazon GuardDuty findings: <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html>
 5. Generating sample findings in GuardDuty: <https://docs.aws.amazon.com/guardduty/latest/ug/sample_findings.html>
 6. Pricing in GuardDuty (30-day free trial): <https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-pricing.html>
+
+#AWS #AWSStudyGroup #FCAJ #FirstCloudAIJourney #CloudTrail #GuardDuty #CloudSecurity
