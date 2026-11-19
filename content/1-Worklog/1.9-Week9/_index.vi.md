@@ -8,20 +8,21 @@ pre: " <b> 1.9. </b> "
 
 ### Mục tiêu tuần 9:
 
-* Kiểm thử workshop
-* Tạo website báo cáo từ template FCAJ
+* Hoàn thiện nội dung website báo cáo
+* Tham dự Event 4
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Kiểm thử trên máy<br>&emsp;+ pnpm check, pnpm build, pnpm test:smoke<br>&emsp;+ Kiểm tra /menu trả về 100 món và không có lỗi CORS | 02/11/2026 | 02/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 3 | - Tạo repository và website báo cáo từ template FCAJ<br>&emsp;+ Cài Hugo và clone template<br>&emsp;+ Bật GitHub Pages bằng workflow deploy | 03/11/2026 | 03/11/2026 | [https://github.com/thienluhoan/fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/)<br>[https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
-| 4 | - Cấu hình website báo cáo<br>&emsp;+ baseURL, ảnh đại diện, ngôn ngữ | 04/11/2026 | 04/11/2026 | [https://gohugo.io/documentation/](https://gohugo.io/documentation/) |
-| 5 | - Kiểm thử đặt bàn và admin trên AWS<br>&emsp;+ Đặt bàn, kiểm tra DynamoDB và email SES<br>&emsp;+ Admin đăng nhập và xác nhận đặt bàn | 05/11/2026 | 05/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 6 | - Kiểm thử upload ảnh S3 và kiểm tra log<br>&emsp;+ PUT bằng URL ký và xem trước ảnh<br>&emsp;+ Log Lambda trong CloudWatch và log build, SSR của Amplify | 06/11/2026 | 06/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 7 | - Thêm 3 event đã tham dự vào website báo cáo<br>&emsp;+ Nội dung chính và ảnh check-in | 07/11/2026 | 07/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 2 | - Hoàn thiện sơ đồ kiến trúc của workshop | 09/11/2026 | 09/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Chuẩn bị nội dung 3 blog và các sơ đồ để đưa lên website | 10/11/2026 | 10/11/2026 | [https://www.facebook.com/groups/awsstudygroupfcj](https://www.facebook.com/groups/awsstudygroupfcj) |
+| 4 | - Thêm 3 bài blog (tiếng Việt và tiếng Anh) vào website báo cáo | 11/11/2026 | 11/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 5 | - Viết phần Workshop trên website báo cáo | 12/11/2026 | 12/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Thêm sơ đồ kiến trúc (hai ngôn ngữ) và dọn các trang cũ của template | 13/11/2026 | 13/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Tham dự sự kiện FCAJ x FPTU: Cloud Mastery 1 (09:00, tầng 26 Bitexco) | 14/11/2026 | 14/11/2026 |  |
+| CN | - Thêm Event 4 vào website báo cáo | 15/11/2026 | 15/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Kết quả đạt được tuần 9:
 
-* Hoàn thành kiểm thử trên máy và trên AWS
-* Website báo cáo chạy trên GitHub Pages
+* Tham dự Event 4 (đủ 4 sự kiện)
+* Website báo cáo có các phần Blogs, Events và Workshop

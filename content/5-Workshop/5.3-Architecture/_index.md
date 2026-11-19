@@ -1,6 +1,6 @@
 ---
 title: "Architecture & Data Flow"
-date: 2026-11-15
+date: 2026-11-17
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
@@ -8,18 +8,27 @@ pre: " <b> 5.3. </b> "
 
 <a href="/fcj-workshop-sieg/images/5-Workshop/5.3-Architecture/architecture-en.png" target="_blank"><img src="/fcj-workshop-sieg/images/5-Workshop/5.3-Architecture/architecture-en.png" alt="AUREL website architecture on AWS" style="max-width:100%; width:900px;"></a>
 
-**Data flow** (numbers follow the diagram)
-1. The customer or admin opens the website over HTTPS. AWS Amplify Hosting serves the Next.js pages (static and SSR) and the Admin BFF.
-2. For admin sign-in, the Next.js server authenticates with Amazon Cognito and keeps the session in an `HttpOnly`, `Secure`, `SameSite` cookie. The access token is valid for 1 hour.
-3. Requests go to Amazon API Gateway (HTTP API). Public routes need no authentication; `/admin/*` routes use a JWT authorizer with the token issued by Cognito. API Gateway applies CORS for the exact origin and throttling.
-4. API Gateway invokes AWS Lambda (Node.js 22), which validates input and applies rate limits. Admin routes require an access token and membership of the `admin` group.
-5. Lambda reads and writes DynamoDB (menu, reservations, contacts, slots and rate limits).
-6. After a reservation is saved, Lambda calls Amazon SES to send an email (best effort; SES is in the sandbox).
-7. For media, Lambda returns signed URLs and the admin uploads or views images directly in the private S3 media bucket (PUT valid for 120 s, GET valid for 900 s).
+**Visitor flow**
+1. The browser loads pages, scripts, images and fonts from Amplify Hosting over HTTPS.
+2. `GET /menu` goes straight to API Gateway; Lambda queries the `menu` partition and returns the dishes that are available.
+3. `POST /reservations` is validated for schema, consent, a honeypot field, IP and email limits, and the Vietnam date and time.
+4. DynamoDB saves the request and increases the seat counter in one transaction (maximum 24 seats per slot). Sending the same UUID again returns the stored request without adding seats.
+5. After a new request is saved, Lambda tries to send an acknowledgement email through SES. If the email fails, the request is still stored. SES is in the sandbox, so only verified addresses or the mailbox simulator receive mail.
+6. `POST /contact` stores the message. Visitor data cannot be read through the public API.
 
-**Supporting components**
-- **IAM execution role:** limits Lambda by ARN to the DynamoDB table, `uploads/*` in S3 and the SES identity.
-- **CloudWatch:** collects logs and metrics from API Gateway and Lambda.
-- **Deployment:** the operator pushes code to the source repository and Amplify Build builds and publishes the frontend. The backend is deployed separately with AWS CloudFormation and SAM, using a Lambda ZIP stored in a separate S3 artifacts bucket.
+**Admin and media flow**
+- The browser sends the sign-in to the Next.js BFF, which authenticates with Cognito and keeps the access token in an `HttpOnly`, `SameSite=Strict` cookie (`Secure` when deployed). The BFF forwards it in the `Authorization` header. The API Gateway JWT authorizer checks signature, issuer, audience and expiry; Lambda also checks `token_use=access` and the `admin` group.
+- Dish photos (JPEG, PNG or WebP, up to 2 MB) go through the BFF and API Gateway to Lambda, which stores them under `menu-images/` in a private S3 bucket and saves the path in DynamoDB. When a visitor views the menu, Lambda returns a signed GET URL for the current image version.
+- In the diagram, arrow 7 links Cognito to S3 Media. The real flow is: Cognito provides the admin access token, Lambda writes to S3 with its IAM execution role, and the browser reads images with the signed GET URL. A separate test page `/admin/media` uses signed PUT (120 s) and GET (900 s) URLs, and files under `uploads/` expire after 30 days.
 
-**Data model:** one DynamoDB table with keys `pk` and `sk`, holding `menu`, `reservations`, `contacts`, `slots` (seat counters per time slot, maximum 24 guests per slot) and `limits` (rate limiting with TTL).
+**DynamoDB model:** one on-demand table with encryption and point-in-time recovery.
+
+| pk | sk | Content |
+| --- | --- | --- |
+| menu | dish ID | Menu items, public query |
+| reservations | UUID | Reservation data and status, admin only |
+| contacts | UUID | Messages, admin only |
+| slots | date#time | Seat counter with conditional update |
+| limits | hash + time bucket | Request counters with TTL |
+
+**Deployment flow:** a Git push to the `main` branch of the private CodeCommit repository triggers an Amplify build that publishes the frontend and the BFF. The backend is deployed separately with CloudFormation; a separate S3 bucket holds the Lambda package. CloudWatch collects logs and metrics.

@@ -1,6 +1,6 @@
 ---
 title: "Kiến trúc chi tiết (Architecture & Data Flow)"
-date: 2026-11-15
+date: 2026-11-17
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "
@@ -8,18 +8,27 @@ pre: " <b> 5.3. </b> "
 
 <a href="/fcj-workshop-sieg/images/5-Workshop/5.3-Architecture/architecture-vi.png" target="_blank"><img src="/fcj-workshop-sieg/images/5-Workshop/5.3-Architecture/architecture-vi.png" alt="Kiến trúc website AUREL trên AWS" style="max-width:100%; width:900px;"></a>
 
-**Luồng dữ liệu** (số thứ tự theo sơ đồ)
-1. Khách hàng hoặc admin truy cập website qua HTTPS. AWS Amplify Hosting phục vụ các trang Next.js (static và SSR) và Admin BFF.
-2. Với đăng nhập admin, Next.js server xác thực với Amazon Cognito và giữ phiên trong cookie `HttpOnly`, `Secure`, `SameSite`. Access token có hiệu lực 1 giờ.
-3. Các yêu cầu đi tới Amazon API Gateway (HTTP API). Route công khai không cần xác thực; route `/admin/*` dùng JWT authorizer với token do Cognito cấp. API Gateway áp dụng CORS đúng origin và throttling.
-4. API Gateway gọi AWS Lambda (Node.js 22), nơi kiểm tra dữ liệu đầu vào và giới hạn tần suất. Route admin yêu cầu access token và thuộc nhóm `admin`.
-5. Lambda đọc và ghi DynamoDB (thực đơn, đặt bàn, liên hệ, slot và giới hạn tần suất).
-6. Sau khi lưu đặt bàn, Lambda gọi Amazon SES để gửi email (best effort; SES đang ở sandbox).
-7. Với media, Lambda trả URL ký và admin upload hoặc xem ảnh trực tiếp trên S3 media bucket riêng tư (PUT hiệu lực 120 giây, GET hiệu lực 900 giây).
+**Luồng của khách**
+1. Trình duyệt tải trang, script, ảnh và font từ Amplify Hosting qua HTTPS.
+2. `GET /menu` đi thẳng tới API Gateway; Lambda truy vấn partition `menu` và trả các món đang phục vụ.
+3. `POST /reservations` được kiểm tra schema, đồng ý điều khoản, trường honeypot, giới hạn theo IP và email, và ngày giờ theo múi giờ Việt Nam.
+4. DynamoDB lưu yêu cầu và tăng bộ đếm ghế trong một transaction (tối đa 24 ghế mỗi khung giờ). Gửi lại cùng UUID sẽ trả về yêu cầu đã lưu mà không cộng thêm ghế.
+5. Sau khi lưu yêu cầu mới, Lambda cố gửi email tiếp nhận qua SES. Nếu gửi lỗi, yêu cầu vẫn được lưu. SES đang ở sandbox nên chỉ địa chỉ đã xác minh hoặc mailbox simulator nhận được thư.
+6. `POST /contact` lưu lời nhắn. Dữ liệu của khách không đọc được qua API công khai.
 
-**Các thành phần hỗ trợ**
-- **IAM execution role:** giới hạn Lambda theo ARN: bảng DynamoDB, `uploads/*` trong S3 và SES identity.
-- **CloudWatch:** thu thập log và metrics từ API Gateway và Lambda.
-- **Triển khai:** người vận hành đẩy mã lên repository nguồn, Amplify Build tự build và publish frontend. Backend được triển khai riêng bằng AWS CloudFormation và SAM, dùng Lambda ZIP lưu trong S3 artifacts bucket riêng.
+**Luồng admin và media**
+- Trình duyệt gửi thông tin đăng nhập tới Next.js BFF, BFF xác thực với Cognito và giữ access token trong cookie `HttpOnly`, `SameSite=Strict` (`Secure` khi triển khai). BFF chuyển token trong header `Authorization`. JWT authorizer của API Gateway kiểm tra chữ ký, issuer, audience và thời hạn; Lambda kiểm tra thêm `token_use=access` và nhóm `admin`.
+- Ảnh món (JPEG, PNG hoặc WebP, tối đa 2 MB) đi qua BFF và API Gateway tới Lambda, Lambda lưu vào tiền tố `menu-images/` của bucket S3 riêng tư và ghi đường dẫn vào DynamoDB. Khi khách xem thực đơn, Lambda cấp URL GET ký sẵn cho phiên bản ảnh hiện hành.
+- Trong sơ đồ, mũi tên 7 nối Cognito với S3 Media. Luồng thực tế là: Cognito cấp access token cho admin, Lambda ghi vào S3 bằng IAM execution role, và trình duyệt đọc ảnh bằng URL GET ký sẵn. Trang thử nghiệm riêng `/admin/media` dùng URL PUT (120 giây) và GET (900 giây) ký sẵn, tệp trong `uploads/` hết hạn sau 30 ngày.
 
-**Mô hình dữ liệu:** một bảng DynamoDB khóa `pk` và `sk`, chứa `menu`, `reservations`, `contacts`, `slots` (bộ đếm ghế theo khung giờ, tối đa 24 khách mỗi khung) và `limits` (giới hạn tần suất, có TTL).
+**Mô hình DynamoDB:** một bảng on-demand, bật mã hóa và khôi phục theo thời điểm.
+
+| pk | sk | Nội dung |
+| --- | --- | --- |
+| menu | ID món | Món trong thực đơn, truy vấn công khai |
+| reservations | UUID | Dữ liệu và trạng thái đặt bàn, chỉ admin đọc |
+| contacts | UUID | Lời nhắn, chỉ admin đọc |
+| slots | ngày#giờ | Bộ đếm ghế, cập nhật có điều kiện |
+| limits | mã băm + khung thời gian | Bộ đếm yêu cầu, có TTL |
+
+**Luồng triển khai:** git push lên nhánh `main` của repository CodeCommit riêng tư kích hoạt Amplify build và phát hành frontend cùng BFF. Backend được triển khai riêng bằng CloudFormation; một bucket S3 riêng chứa gói Lambda. CloudWatch thu thập log và metrics.

@@ -1,77 +1,72 @@
 ---
 title: "Step-by-step Lab Guide"
-date: 2026-11-11
+date: 2026-11-17
 weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
 
-### Step 1. Run locally (optional check)
+### Step 1. Run and check locally
 ```sh
-cd aurel-restaurant
 pnpm install --frozen-lockfile
 pnpm setup
 pnpm dev
+pnpm check && pnpm build && pnpm test:smoke
 ```
-Open http://127.0.0.1:3000. `pnpm setup` creates `.env.local` with a random password and session key. Do not commit this file.
+`pnpm setup` creates a local `.env.local`; do not commit it.
 
 ### Step 2. Deploy the AWS backend
 ```sh
-aws configure sso
-aws sso login --profile YOUR_PROFILE
-export AWS_PROFILE=YOUR_PROFILE
-export AWS_REGION=ap-southeast-1
+export AWS_PROFILE=aurel-lab AWS_REGION=ap-southeast-1
+export SENDER_EMAIL='YOUR_OWN_VERIFIED_EMAIL'
 pnpm build:lambda
-sam validate --lint --template-file infra/template.yaml
-sam build --template-file infra/template.yaml
-sam deploy --guided
+aws cloudformation deploy --stack-name aurel-artifacts --template-file infra/artifacts.yaml
+export ARTIFACT_BUCKET=$(aws cloudformation describe-stacks --stack-name aurel-artifacts \
+  --query 'Stacks[0].Outputs[?OutputKey==`BucketName`].OutputValue | [0]' --output text)
+aws cloudformation package --template-file infra/template.yaml \
+  --s3-bucket "$ARTIFACT_BUCKET" --s3-prefix lambda --output-template-file packaged-backend.yaml
+aws cloudformation deploy --stack-name aurel-backend --template-file packaged-backend.yaml \
+  --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND \
+  --parameter-overrides FrontendOrigin=https://pending.invalid SenderEmail="$SENDER_EMAIL"
+aws cloudformation describe-stacks --stack-name aurel-backend --query 'Stacks[0].Outputs' --output table
 ```
-Guided answers for the first deployment:
-- Stack name: `aurel-backend`; Region: `ap-southeast-1`.
-- `FrontendOrigin`: `https://pending.invalid` for now (updated in Step 7).
-- `SenderEmail`: a real email that you own. Open the verification email from AWS and confirm it while the stack is being created.
-- Allow SAM to create IAM roles.
-
-Read the stack outputs (`ApiUrl`, `TableName`, `MediaBucket`, `UserPoolId`, `CognitoClientId`):
-```sh
-aws cloudformation describe-stacks --stack-name aurel-backend \
-  --query 'Stacks[0].Outputs' --output table
-```
-
-### Step 3. Seed the menu
+Confirm the verification email from AWS while the stack is being created. Then seed the menu and create the admin user:
 ```sh
 export TABLE_NAME=YOUR_TABLE_OUTPUT
 node dist/seed-aws.mjs
+python3 bootstrap-admin.py --pool YOUR_USER_POOL_ID --email YOUR_ADMIN_EMAIL
 ```
-The script only adds IDs that do not exist yet and can be run again.
-
-### Step 4. Create the admin user in Cognito
+The seed script only adds missing dishes and can be run again. The admin script asks for the password interactively, adds the user to the `admin` group and does not allow self-registration. Quick check:
 ```sh
-export USER_POOL_ID=YOUR_POOL_OUTPUT
-export ADMIN_EMAIL=YOUR_REAL_EMAIL
-node scripts/create-admin.mjs
+curl -i "$API_URL/menu"                 # 200
+curl -i "$API_URL/admin/reservations"   # 401
 ```
-The password must have at least 14 characters with upper case, lower case, digits and symbols. The script adds the user to the `admin` group.
 
-### Step 5. Prepare SES
-In the SES sandbox, both the sender and the test recipient must be verified. To send to real guests, request SES production access in the same Region.
-
-### Step 6. Deploy the frontend on Amplify Hosting
-1. Push the project folder as the root of your GitHub repository (do not push `node_modules`, `.next`, `.env.local`, `.data`, `dist`, `.aws-sam`).
-2. In Amplify, choose **Create new app**, connect the repository and branch, and select Node 22 in the build image. The repository already contains `amplify.yml`.
-3. Add these environment variables before building (never add AWS access keys):
+### Step 3. Deploy the frontend with CI/CD
+```sh
+python3 scripts/package-source.py --output ../aurel-codecommit-source.zip
+aws s3 cp ../aurel-codecommit-source.zip "s3://$ARTIFACT_BUCKET/source/aurel-lab.zip"
+aws cloudformation deploy --stack-name aurel-frontend --template-file infra/amplify-codecommit.yaml \
+  --capabilities CAPABILITY_IAM --parameter-overrides SourceBucket="$ARTIFACT_BUCKET" \
+  SourceKey=source/aurel-lab.zip ApiUrl="$API_URL" CognitoClientId="$COGNITO_CLIENT_ID" \
+  CognitoUserPoolId="$USER_POOL_ID"
+```
+The template creates a CodeCommit repository, a read-only role and the Amplify app. Use these environment variables (never admin passwords, session secrets or AWS keys):
 
 | Variable | Value |
 | --- | --- |
 | `DATA_MODE` | `aws` |
-| `API_BASE_URL` | `ApiUrl` output |
-| `NEXT_PUBLIC_API_BASE_URL` | same `ApiUrl`, without trailing `/` |
-| `COGNITO_CLIENT_ID` | `CognitoClientId` output |
-| `COGNITO_USER_POOL_ID` | `UserPoolId` output |
+| `API_BASE_URL`, `NEXT_PUBLIC_API_BASE_URL` | `ApiUrl`, no trailing slash |
+| `COGNITO_CLIENT_ID`, `COGNITO_USER_POOL_ID` | backend outputs |
 | `APP_AWS_REGION` | `ap-southeast-1` |
-| `APP_ORIGIN` | exact HTTPS origin of the frontend, without trailing `/` |
+| `APP_ORIGIN` | exact frontend origin |
 
-The default origin looks like `https://main.APP_ID.amplifyapp.com`. If a build ran before the variables were complete, set them and run the build again.
-
-### Step 7. Update the backend CORS origin
-Run `sam deploy --guided` again and replace `FrontendOrigin` with the real Amplify URL. Redeploy the frontend if any variable changed, because `NEXT_PUBLIC_*` values are packaged at build time.
+Then set the real frontend origin in the backend and start an Amplify job:
+```sh
+aws cloudformation deploy --stack-name aurel-backend --template-file packaged-backend.yaml \
+  --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND \
+  --parameter-overrides FrontendOrigin="$FRONTEND_ORIGIN" SenderEmail="$SENDER_EMAIL"
+aws amplify start-job --app-id "$APP_ID" --branch-name main --job-type RELEASE
+aws amplify list-jobs --app-id "$APP_ID" --branch-name main --max-results 5
+```
+Treat the deployment as successful only when the job status is `SUCCEED`. The ZIP seeds the repository only once; later updates are Git pushes to `main`, which Amplify builds automatically.

@@ -8,16 +8,16 @@ pre: " <b> 1.11. </b> "
 
 ### Week 11 Objectives:
 
-* Complete the remaining report sections
+* Check and polish the report
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Review the report content against the minimum requirements list | 16/11/2026 | 16/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 3 | - Prepare the 12-week Worklog following the template | 17/11/2026 | 17/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 4 | - Complete the Proposal (7 required sections) | 18/11/2026 | 18/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 5 | - Complete the Self-Assessment (8 criteria) | 19/11/2026 | 19/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 6 | - Complete Sharing and Feedback | 20/11/2026 | 20/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 2 | - Check the Vietnamese and English pages | 23/11/2026 | 23/11/2026 |  |
+| 3 | - Check images, links and formatting on GitHub Pages | 24/11/2026 | 24/11/2026 | [https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
+| 4 | - Cross-check the Workshop content with the team version | 25/11/2026 | 25/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 5 | - Review the Worklog, dates and references | 26/11/2026 | 26/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 6 | - Update any missing parts | 27/11/2026 | 27/11/2026 |  |
 
 ### Week 11 Achievements:
 

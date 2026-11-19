@@ -8,19 +8,20 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* Attend an event
-* Deploy the frontend on Amplify Hosting, prepare SES and update CORS
+* Deploy to AWS and monitoring with the team
+* Create the report website from the FCAJ template
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Attend Smart Plushies for Children (09:00, floor 36 Bitexco)<br>&emsp;+ Build a smart plush bear model that makes a sound when interacted with<br>&emsp;+ Use Microsoft MakeCode | 26/10/2026 | 26/10/2026 |  |
-| 3 | - Prepare SES<br>&emsp;+ Verify the SenderEmail<br>&emsp;+ Understand the SES sandbox limits | 27/10/2026 | 27/10/2026 | [https://docs.aws.amazon.com/ses/latest/dg/Welcome.html](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) |
-| 4 | - Connect the repository to Amplify Hosting<br>&emsp;+ Choose Node 22, use amplify.yml | 28/10/2026 | 28/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
-| 5 | - Configure environment variables and build<br>&emsp;+ DATA_MODE, API_BASE_URL, NEXT_PUBLIC_API_BASE_URL<br>&emsp;+ COGNITO_CLIENT_ID, COGNITO_USER_POOL_ID, APP_AWS_REGION, APP_ORIGIN | 29/10/2026 | 29/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 6 | - Update FrontendOrigin (CORS) with sam deploy --guided<br>- Redeploy the frontend and check that the website connects to the backend | 30/10/2026 | 30/10/2026 | [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)<br>[https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
+| 2 | - Finish the local build and tests with the team | 02/11/2026 | 02/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Deploy to AWS with the team<br>&emsp;+ Backend with CloudFormation, menu seeding, Cognito admin<br>&emsp;+ Frontend on Amplify Hosting<br>- Create the repository and report website from the FCAJ template and enable GitHub Pages | 03/11/2026 | 03/11/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://github.com/thienluhoan/fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/)<br>[https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
+| 4 | - Update CORS and environment variables, check that the website connects to the backend<br>- Configure the report website (baseURL, profile picture, languages) | 04/11/2026 | 04/11/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/) |
+| 5 | - Study the monitoring setup: API access log, dashboard and 4 CloudWatch alarms | 05/11/2026 | 05/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Study the cost estimate with the AWS Pricing Calculator | 06/11/2026 | 06/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Add the 3 attended events to the report website (content and check-in photos) | 07/11/2026 | 07/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Week 8 Achievements:
 
-* Attended Event 2
-* The website runs on Amplify and connects to the backend
+* Backend and frontend run on AWS
+* The report website runs on GitHub Pages

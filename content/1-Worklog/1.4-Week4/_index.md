@@ -8,19 +8,19 @@ pre: " <b> 1.4. </b> "
 
 ### Week 4 Objectives:
 
-* Understand easy-to-forget charges and cost management tools
-* Attend events
+* Complete Blog 2
+* Study CloudTrail and GuardDuty
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Study easy-to-forget lab charges<br>&emsp;+ EC2 left running<br>&emsp;+ NAT Gateway: charged per hour and per GB of data<br>&emsp;+ EBS volumes and public IPv4 | 28/09/2026 | 28/09/2026 | [https://aws.amazon.com/vpc/pricing/](https://aws.amazon.com/vpc/pricing/) |
-| 3 | - Attend AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City (09:00, floor 26 Bitexco) | 29/09/2026 | 29/09/2026 |  |
-| 4 | - Study AWS Cost Explorer and cost allocation tags<br>&emsp;+ Group costs by tag, cost data latency<br>&emsp;+ Tag resources when creating them (for example project=lab) and activate the tag | 30/09/2026 | 30/09/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)<br>[https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html) |
-| 5 | - Study AWS Budgets<br>&emsp;+ Monthly budget and email alerts | 01/10/2026 | 01/10/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
-| 6 | - Attend the Fireside Chat with Dr. Werner (09:00, floor 26 Bitexco) | 02/10/2026 | 02/10/2026 |  |
+| 2 | - Study AWS Budgets | 05/10/2026 | 05/10/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
+| 3 | - Draft Blog 2 and design its diagram | 06/10/2026 | 06/10/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)<br>[https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
+| 4 | - Finalize Blog 2 and create a clean-up checklist | 07/10/2026 | 07/10/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html) |
+| 5 | - Study CloudTrail: event history and multi-Region trails | 08/10/2026 | 08/10/2026 | [https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html)<br>[https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/how-cloudtrail-works.html) |
+| 6 | - Study GuardDuty: data sources, findings and severity | 09/10/2026 | 09/10/2026 | [https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) |
 
 ### Week 4 Achievements:
 
-* Attended 2 events (Event 1 and Event 3)
-* Understood easy-to-forget charges and the Cost Explorer and Budgets tools
+* Completed Blog 2 with diagram
+* Understood the roles of CloudTrail and GuardDuty

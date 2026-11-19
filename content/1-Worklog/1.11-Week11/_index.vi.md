@@ -8,16 +8,16 @@ pre: " <b> 1.11. </b> "
 
 ### Mục tiêu tuần 11:
 
-* Hoàn thiện các phần còn lại của báo cáo
+* Kiểm tra và hoàn thiện báo cáo
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Rà soát nội dung báo cáo theo danh sách yêu cầu tối thiểu | 16/11/2026 | 16/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 3 | - Soạn Worklog 12 tuần theo mẫu | 17/11/2026 | 17/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 4 | - Hoàn thiện Proposal (7 mục theo yêu cầu) | 18/11/2026 | 18/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 5 | - Hoàn thiện Self-Assessment (8 tiêu chí) | 19/11/2026 | 19/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 6 | - Hoàn thiện Sharing and Feedback | 20/11/2026 | 20/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 2 | - Kiểm tra lại các trang tiếng Việt và tiếng Anh | 23/11/2026 | 23/11/2026 |  |
+| 3 | - Kiểm tra ảnh, link và định dạng trên GitHub Pages | 24/11/2026 | 24/11/2026 | [https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
+| 4 | - Đối chiếu nội dung Workshop với bản chung của nhóm | 25/11/2026 | 25/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 5 | - Rà soát Worklog, ngày tháng và tài liệu tham khảo | 26/11/2026 | 26/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 6 | - Cập nhật các phần còn thiếu nếu có | 27/11/2026 | 27/11/2026 |  |
 
 ### Kết quả đạt được tuần 11:
 

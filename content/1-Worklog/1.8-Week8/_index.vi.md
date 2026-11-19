@@ -8,19 +8,20 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu tuần 8:
 
-* Tham dự sự kiện
-* Triển khai frontend trên Amplify Hosting, chuẩn bị SES và cập nhật CORS
+* Cùng nhóm triển khai AWS và giám sát
+* Tạo website báo cáo từ template FCAJ
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Tham dự sự kiện Smart Plushies for Children (09:00, tầng 36 Bitexco)<br>&emsp;+ Làm mô hình gấu nhồi bông thông minh phát ra âm thanh khi tác động<br>&emsp;+ Dùng Microsoft MakeCode | 26/10/2026 | 26/10/2026 |  |
-| 3 | - Chuẩn bị SES<br>&emsp;+ Xác minh SenderEmail<br>&emsp;+ Hiểu giới hạn của SES sandbox | 27/10/2026 | 27/10/2026 | [https://docs.aws.amazon.com/ses/latest/dg/Welcome.html](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) |
-| 4 | - Kết nối repository với Amplify Hosting<br>&emsp;+ Chọn Node 22, dùng amplify.yml | 28/10/2026 | 28/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
-| 5 | - Cấu hình biến môi trường và build<br>&emsp;+ DATA_MODE, API_BASE_URL, NEXT_PUBLIC_API_BASE_URL<br>&emsp;+ COGNITO_CLIENT_ID, COGNITO_USER_POOL_ID, APP_AWS_REGION, APP_ORIGIN | 29/10/2026 | 29/10/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 6 | - Cập nhật FrontendOrigin (CORS) bằng sam deploy --guided<br>- Deploy lại frontend và kiểm tra website kết nối với backend | 30/10/2026 | 30/10/2026 | [https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)<br>[https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html) |
+| 2 | - Cùng nhóm hoàn thiện bản chạy local và kiểm thử | 02/11/2026 | 02/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Cùng nhóm triển khai AWS<br>&emsp;+ Backend bằng CloudFormation, nạp thực đơn, tạo admin Cognito<br>&emsp;+ Frontend trên Amplify Hosting<br>- Tạo repository và website báo cáo từ template FCAJ, bật GitHub Pages | 03/11/2026 | 03/11/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://github.com/thienluhoan/fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/)<br>[https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
+| 4 | - Cập nhật CORS và biến môi trường, kiểm tra website kết nối backend<br>- Cấu hình website báo cáo (baseURL, ảnh đại diện, ngôn ngữ) | 04/11/2026 | 04/11/2026 | [https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/) |
+| 5 | - Tìm hiểu cấu hình giám sát: access log API, dashboard và 4 alarm CloudWatch | 05/11/2026 | 05/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Tìm hiểu dự toán chi phí bằng AWS Pricing Calculator | 06/11/2026 | 06/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Thêm 3 event đã tham dự vào website báo cáo (nội dung và ảnh check-in) | 07/11/2026 | 07/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Kết quả đạt được tuần 8:
 
-* Tham dự Event 2
-* Website chạy trên Amplify và kết nối được với backend
+* Backend và frontend chạy trên AWS
+* Website báo cáo chạy trên GitHub Pages

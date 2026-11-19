@@ -8,19 +8,18 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 
-* Get acquainted with FCAJ members and understand the program rules
-* Prepare the AWS account and lab tools
+* Study AWS fundamentals at home
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Get acquainted with FCAJ members<br>- Read and take note of the rules and the minimum report sections | 07/09/2026 | 07/09/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 3 | - Learn about AWS and its types of services<br>&emsp;+ Compute<br>&emsp;+ Storage<br>&emsp;+ Networking<br>&emsp;+ Database | 08/09/2026 | 08/09/2026 | [https://cloudjourney.awsstudygroup.com/](https://cloudjourney.awsstudygroup.com/)<br>[https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
-| 4 | - Create an AWS account<br>- Get familiar with the AWS Management Console | 09/09/2026 | 09/09/2026 | [https://aws.amazon.com/getting-started/](https://aws.amazon.com/getting-started/) |
-| 5 | - Install the lab tools<br>&emsp;+ AWS CLI v2<br>&emsp;+ AWS SAM CLI<br>&emsp;+ Node.js and Git | 10/09/2026 | 10/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)<br>[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) |
-| 6 | - Practice basic AWS CLI<br>&emsp;+ Configure credentials<br>&emsp;+ Run commands to verify the account configuration | 11/09/2026 | 11/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
+| 2 | - Study at home with the First Cloud Journey materials: AWS overview and service groups<br>&emsp;+ Compute, Storage, Networking, Database | 14/09/2026 | 14/09/2026 | [https://cloudjourney.awsfcaj.com/](https://cloudjourney.awsfcaj.com/) |
+| 3 | - Watch videos on the AWS Study Group YouTube channel about core services | 15/09/2026 | 15/09/2026 | [https://cloudjourney.awsfcaj.com/](https://cloudjourney.awsfcaj.com/) |
+| 4 | - Learn the AWS Management Console and AWS CLI | 16/09/2026 | 16/09/2026 | [https://cloudjourney.awsfcaj.com/](https://cloudjourney.awsfcaj.com/)<br>[https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
+| 5 | - Study IAM: root user, MFA and identity types | 17/09/2026 | 17/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| 6 | - Summarize notes and review the week | 18/09/2026 | 18/09/2026 | [https://cloudjourney.awsfcaj.com/](https://cloudjourney.awsfcaj.com/) |
 
 ### Week 1 Achievements:
 
-* AWS account and lab tools are ready
-* Understood the sections required in the report
+* Understood the AWS overview and core service groups
+* Became familiar with the Console, CLI and IAM

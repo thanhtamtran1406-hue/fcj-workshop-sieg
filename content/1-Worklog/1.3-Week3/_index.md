@@ -8,17 +8,19 @@ pre: " <b> 1.3. </b> "
 
 ### Week 3 Objectives:
 
-* Complete Blog 1 on IAM
+* Attend events
+* Complete Blog 1 and start studying AWS cost
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Outline Blog 1: if an access key leaks, what is the maximum damage? | 21/09/2026 | 21/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
-| 3 | - Write the sections on identity and credential types | 22/09/2026 | 22/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) |
-| 4 | - Write the least privilege section<br>- Design the diagram of a policy that allows s3:GetObject and denies s3:DeleteObject | 23/09/2026 | 23/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
-| 5 | - Plan the verification lab<br>&emsp;+ Two IAM identities with broad and narrow permissions<br>&emsp;+ AWS CLI commands and IAM Access Analyzer | 24/09/2026 | 24/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) |
-| 6 | - Finalize Blog 1 and add references | 25/09/2026 | 25/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)<br>[https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
+| 2 | - Draft Blog 1 and design the policy diagram (allow s3:GetObject, deny s3:DeleteObject) | 28/09/2026 | 28/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
+| 3 | - Attend AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City (09:00, floor 26 Bitexco) | 29/09/2026 | 29/09/2026 |  |
+| 4 | - Finalize Blog 1 and its references<br>- Study easy-to-forget charges (EC2, NAT Gateway, EBS, public IPv4) | 30/09/2026 | 30/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[https://aws.amazon.com/vpc/pricing/](https://aws.amazon.com/vpc/pricing/) |
+| 5 | - Study Cost Explorer and cost allocation tags | 01/10/2026 | 01/10/2026 | [https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)<br>[https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html) |
+| 6 | - Attend the Fireside Chat with Dr. Werner (09:00, floor 26 Bitexco) | 02/10/2026 | 02/10/2026 |  |
 
 ### Week 3 Achievements:
 
-* Completed the Blog 1 draft with diagram and references
+* Attended 2 events (Event 1 and Event 3)
+* Completed Blog 1

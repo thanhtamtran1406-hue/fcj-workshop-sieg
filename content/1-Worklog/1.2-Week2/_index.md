@@ -8,19 +8,22 @@ pre: " <b> 1.2. </b> "
 
 ### Week 2 Objectives:
 
-* Understand identity and credential types in IAM
-* Understand the principle of least privilege
+* Start working at the office and get to know the team
+* Prepare the lab tools
+* Attend the first event
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Study IAM: identity types<br>&emsp;+ The root user is used only for tasks that require it, with MFA enabled<br>&emsp;+ Day-to-day work uses an identity with just enough permissions | 14/09/2026 | 14/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
-| 3 | - Study credentials<br>&emsp;+ Long-term access keys: never expire and can linger in source code and commit history<br>&emsp;+ User sign-in through IAM Identity Center | 15/09/2026 | 15/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) |
-| 4 | - Study IAM roles for applications running on AWS (EC2, Lambda)<br>&emsp;+ Receive temporary credentials | 16/09/2026 | 16/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) |
-| 5 | - Study the principle of least privilege<br>&emsp;+ Allow only the exact actions on the exact resources | 17/09/2026 | 17/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
-| 6 | - Study policy evaluation logic<br>&emsp;+ An explicit deny always wins over an allow<br>- Summarize notes | 18/09/2026 | 18/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
+| 2 | - Started going to the office and met the FCAJ members<br>- Read the rules and the minimum report sections | 21/09/2026 | 21/09/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 3 | - Prepare the lab environment<br>&emsp;+ AWS account, AWS CLI v2<br>&emsp;+ Node.js and Git | 22/09/2026 | 22/09/2026 | [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) |
+| 4 | - Study credentials and IAM roles<br>&emsp;+ Long-term access keys and temporary credentials | 23/09/2026 | 23/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)<br>[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) |
+| 5 | - Study least privilege and explicit deny | 24/09/2026 | 24/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic_policy-eval-denyallow.html) |
+| 6 | - Outline Blog 1 on IAM | 25/09/2026 | 25/09/2026 | [https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) |
+| 7 | - Attend AWS First Day Cloud (floor 26 Bitexco) | 26/09/2026 | 26/09/2026 |  |
 
 ### Week 2 Achievements:
 
-* Can tell identity types apart and understand access key risks
-* Understood least privilege and explicit deny
+* Started working at the office with the team
+* Tools are ready and IAM knowledge is in place for Blog 1
+* Attended AWS First Day Cloud

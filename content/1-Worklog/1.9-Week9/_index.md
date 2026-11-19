@@ -8,20 +8,21 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Objectives:
 
-* Test the workshop
-* Create the report website from the FCAJ template
+* Complete the report website content
+* Attend Event 4
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Run local checks<br>&emsp;+ pnpm check, pnpm build, pnpm test:smoke<br>&emsp;+ Check that /menu returns 100 dishes with no CORS error | 02/11/2026 | 02/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 3 | - Create the repository and report website from the FCAJ template<br>&emsp;+ Install Hugo and clone the template<br>&emsp;+ Enable GitHub Pages with the deploy workflow | 03/11/2026 | 03/11/2026 | [https://github.com/thienluhoan/fcj-workshop-template](https://github.com/thienluhoan/fcj-workshop-template)<br>[https://gohugo.io/documentation/](https://gohugo.io/documentation/)<br>[https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
-| 4 | - Configure the report website<br>&emsp;+ baseURL, profile picture, languages | 04/11/2026 | 04/11/2026 | [https://gohugo.io/documentation/](https://gohugo.io/documentation/) |
-| 5 | - Test reservations and the admin on AWS<br>&emsp;+ Book a table, check DynamoDB and the SES email<br>&emsp;+ Admin signs in and confirms the reservation | 05/11/2026 | 05/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 6 | - Test the S3 image upload and check logs<br>&emsp;+ PUT with a signed URL and preview the image<br>&emsp;+ Lambda logs in CloudWatch and Amplify build and SSR logs | 06/11/2026 | 06/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
-| 7 | - Add the 3 attended events to the report website<br>&emsp;+ Main content and check-in photos | 07/11/2026 | 07/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 2 | - Finalize the workshop architecture diagram | 09/11/2026 | 09/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 3 | - Prepare the 3 blogs and diagrams for the website | 10/11/2026 | 10/11/2026 | [https://www.facebook.com/groups/awsstudygroupfcj](https://www.facebook.com/groups/awsstudygroupfcj) |
+| 4 | - Add the 3 blogs (Vietnamese and English) to the report website | 11/11/2026 | 11/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 5 | - Write the Workshop section on the report website | 12/11/2026 | 12/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Add the architecture diagram (both languages) and remove old template pages | 13/11/2026 | 13/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 7 | - Attend FCAJ x FPTU: Cloud Mastery 1 (09:00, floor 26 Bitexco) | 14/11/2026 | 14/11/2026 |  |
+| CN | - Add Event 4 to the report website | 15/11/2026 | 15/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Week 9 Achievements:
 
-* Completed local and AWS testing
-* The report website runs on GitHub Pages
+* Attended Event 4 (4 events in total)
+* The report website has the Blogs, Events and Workshop sections

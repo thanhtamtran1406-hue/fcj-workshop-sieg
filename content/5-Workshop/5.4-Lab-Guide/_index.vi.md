@@ -1,77 +1,72 @@
 ---
 title: "Các bước triển khai thực hành (Step-by-step Lab Guide)"
-date: 2026-11-11
+date: 2026-11-17
 weight: 4
 chapter: false
 pre: " <b> 5.4. </b> "
 ---
 
-### Bước 1. Chạy thử trên máy (kiểm tra tùy chọn)
+### Bước 1. Chạy và kiểm tra trên máy
 ```sh
-cd aurel-restaurant
 pnpm install --frozen-lockfile
 pnpm setup
 pnpm dev
+pnpm check && pnpm build && pnpm test:smoke
 ```
-Mở http://127.0.0.1:3000. `pnpm setup` tạo `.env.local` với mật khẩu và khóa phiên ngẫu nhiên. Không đưa file này vào Git.
+`pnpm setup` tạo file `.env.local` cục bộ; không đưa file này vào Git.
 
 ### Bước 2. Triển khai backend AWS
 ```sh
-aws configure sso
-aws sso login --profile YOUR_PROFILE
-export AWS_PROFILE=YOUR_PROFILE
-export AWS_REGION=ap-southeast-1
+export AWS_PROFILE=aurel-lab AWS_REGION=ap-southeast-1
+export SENDER_EMAIL='EMAIL_CUA_BAN_DA_XAC_MINH'
 pnpm build:lambda
-sam validate --lint --template-file infra/template.yaml
-sam build --template-file infra/template.yaml
-sam deploy --guided
+aws cloudformation deploy --stack-name aurel-artifacts --template-file infra/artifacts.yaml
+export ARTIFACT_BUCKET=$(aws cloudformation describe-stacks --stack-name aurel-artifacts \
+  --query 'Stacks[0].Outputs[?OutputKey==`BucketName`].OutputValue | [0]' --output text)
+aws cloudformation package --template-file infra/template.yaml \
+  --s3-bucket "$ARTIFACT_BUCKET" --s3-prefix lambda --output-template-file packaged-backend.yaml
+aws cloudformation deploy --stack-name aurel-backend --template-file packaged-backend.yaml \
+  --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND \
+  --parameter-overrides FrontendOrigin=https://pending.invalid SenderEmail="$SENDER_EMAIL"
+aws cloudformation describe-stacks --stack-name aurel-backend --query 'Stacks[0].Outputs' --output table
 ```
-Các lựa chọn khi deploy guided lần đầu:
-- Stack name: `aurel-backend`; Region: `ap-southeast-1`.
-- `FrontendOrigin`: tạm dùng `https://pending.invalid` (sẽ cập nhật ở Bước 7).
-- `SenderEmail`: email thật thuộc quyền sở hữu của bạn. Mở thư xác minh từ AWS và xác nhận ngay trong lúc stack đang tạo.
-- Cho phép SAM tạo IAM role.
-
-Đọc outputs của stack (`ApiUrl`, `TableName`, `MediaBucket`, `UserPoolId`, `CognitoClientId`):
+Xác nhận email xác minh từ AWS ngay trong lúc stack đang tạo. Sau đó nạp thực đơn và tạo admin:
 ```sh
-aws cloudformation describe-stacks --stack-name aurel-backend \
-  --query 'Stacks[0].Outputs' --output table
-```
-
-### Bước 3. Nạp thực đơn
-```sh
-export TABLE_NAME=YOUR_TABLE_OUTPUT
+export TABLE_NAME=OUTPUT_TEN_BANG
 node dist/seed-aws.mjs
+python3 bootstrap-admin.py --pool USER_POOL_ID_CUA_BAN --email EMAIL_ADMIN
 ```
-Script chỉ thêm các ID chưa tồn tại và có thể chạy lại.
-
-### Bước 4. Tạo admin trong Cognito
+Script seed chỉ thêm các món còn thiếu và có thể chạy lại. Script admin hỏi mật khẩu tương tác, thêm user vào nhóm `admin` và không cho phép tự đăng ký. Kiểm tra nhanh:
 ```sh
-export USER_POOL_ID=YOUR_POOL_OUTPUT
-export ADMIN_EMAIL=YOUR_REAL_EMAIL
-node scripts/create-admin.mjs
+curl -i "$API_URL/menu"                 # 200
+curl -i "$API_URL/admin/reservations"   # 401
 ```
-Mật khẩu ít nhất 14 ký tự gồm chữ hoa, chữ thường, số và ký hiệu. Script thêm user vào nhóm `admin`.
 
-### Bước 5. Chuẩn bị SES
-Trong SES sandbox, cả người gửi và người nhận thử nghiệm đều phải được xác minh. Để gửi cho khách thật, cần xin SES production access ở cùng Region.
-
-### Bước 6. Triển khai frontend trên Amplify Hosting
-1. Đẩy thư mục dự án làm gốc của repository GitHub (không đẩy `node_modules`, `.next`, `.env.local`, `.data`, `dist`, `.aws-sam`).
-2. Trong Amplify, chọn **Create new app**, kết nối repository và branch, chọn Node 22 trong build image. Repository đã có sẵn `amplify.yml`.
-3. Thêm các biến môi trường sau trước khi build (không thêm AWS access key):
+### Bước 3. Triển khai frontend với CI/CD
+```sh
+python3 scripts/package-source.py --output ../aurel-codecommit-source.zip
+aws s3 cp ../aurel-codecommit-source.zip "s3://$ARTIFACT_BUCKET/source/aurel-lab.zip"
+aws cloudformation deploy --stack-name aurel-frontend --template-file infra/amplify-codecommit.yaml \
+  --capabilities CAPABILITY_IAM --parameter-overrides SourceBucket="$ARTIFACT_BUCKET" \
+  SourceKey=source/aurel-lab.zip ApiUrl="$API_URL" CognitoClientId="$COGNITO_CLIENT_ID" \
+  CognitoUserPoolId="$USER_POOL_ID"
+```
+Template tạo repository CodeCommit, role chỉ đọc và Amplify app. Dùng các biến môi trường sau (không đưa mật khẩu admin, session secret hay AWS key):
 
 | Biến | Giá trị |
 | --- | --- |
 | `DATA_MODE` | `aws` |
-| `API_BASE_URL` | output `ApiUrl` |
-| `NEXT_PUBLIC_API_BASE_URL` | cùng `ApiUrl`, không dấu `/` cuối |
-| `COGNITO_CLIENT_ID` | output `CognitoClientId` |
-| `COGNITO_USER_POOL_ID` | output `UserPoolId` |
+| `API_BASE_URL`, `NEXT_PUBLIC_API_BASE_URL` | `ApiUrl`, không có dấu `/` cuối |
+| `COGNITO_CLIENT_ID`, `COGNITO_USER_POOL_ID` | outputs của backend |
 | `APP_AWS_REGION` | `ap-southeast-1` |
-| `APP_ORIGIN` | origin HTTPS chính xác của frontend, không dấu `/` cuối |
+| `APP_ORIGIN` | origin chính xác của frontend |
 
-Origin mặc định có dạng `https://main.APP_ID.amplifyapp.com`. Nếu build đã chạy trước khi đủ biến, hãy điền biến rồi chạy lại build.
-
-### Bước 7. Cập nhật CORS origin của backend
-Chạy lại `sam deploy --guided` và thay `FrontendOrigin` bằng URL Amplify thật. Deploy lại frontend nếu có đổi biến, vì các giá trị `NEXT_PUBLIC_*` được đóng gói lúc build.
+Sau đó đặt origin thật của frontend vào backend và chạy một Amplify job:
+```sh
+aws cloudformation deploy --stack-name aurel-backend --template-file packaged-backend.yaml \
+  --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND \
+  --parameter-overrides FrontendOrigin="$FRONTEND_ORIGIN" SenderEmail="$SENDER_EMAIL"
+aws amplify start-job --app-id "$APP_ID" --branch-name main --job-type RELEASE
+aws amplify list-jobs --app-id "$APP_ID" --branch-name main --max-results 5
+```
+Chỉ coi là triển khai thành công khi trạng thái job là `SUCCEED`. File ZIP chỉ nạp repository một lần; các lần cập nhật sau là Git push lên `main`, Amplify tự build.

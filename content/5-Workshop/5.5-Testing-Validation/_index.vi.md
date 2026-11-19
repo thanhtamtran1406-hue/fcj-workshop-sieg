@@ -1,33 +1,40 @@
 ---
 title: "Kiểm thử & đo lường (Testing & Validation)"
-date: 2026-11-11
+date: 2026-11-17
 weight: 5
 chapter: false
 pre: " <b> 5.5. </b> "
 ---
 
-### Kiểm tra trên máy
-```sh
-pnpm check          # TypeScript, unit/integration tests, bundle Lambda + seed
-pnpm build
-pnpm test:smoke     # server riêng ở cổng 3100, dữ liệu tạm
-```
+### Kết quả kiểm thử
+- **Trên máy:** 30 test tự động, kiểm tra TypeScript và build đều đạt; bộ smoke trên bản build cục bộ đạt 41 kiểm tra HTTP (đặt bàn, gửi lại yêu cầu, phân quyền admin, tải ảnh). Transaction DynamoDB được kiểm thử bằng mock.
+- **Backend trên AWS:** 14 kiểm tra đạt, gồm access token Cognito, từ chối ID token, lưu và đọc đặt bàn, đổi trạng thái, idempotency, S3 PUT/GET thật và lời nhắn liên hệ.
+- **Kiểm tra bản phát hành:** API công khai và API admin đều trả 100 món, 7 trang trả HTTP 200 và ảnh khớp từng byte. Đây là kiểm tra HTTP, không phải tự động hóa trình duyệt.
 
-### Kiểm tra trên AWS sau khi triển khai
-1. `/menu` trả về 100 món sau khi nạp dữ liệu, và tab Network của trình duyệt không có lỗi CORS.
-2. Đặt bàn bằng email đã xác minh trong SES sandbox; kiểm tra bản ghi DynamoDB, thư SES và trạng thái `pending`.
-3. Đăng nhập admin thuộc nhóm, xác nhận một đặt bàn, tải lại trang và đối chiếu với database.
-4. User không thuộc nhóm và token hết hạn phải bị từ chối; người dùng công khai không đọc được danh sách đặt bàn và lời nhắn.
-5. Thêm, sửa, ẩn, xóa một món; trang thực đơn phản ánh đúng dữ liệu từ API.
-6. Tải một ảnh thử ở tab S3; PUT thành công và xem trước hiển thị. Bucket không có quyền đọc công khai.
-7. Kiểm tra log Lambda trong CloudWatch và log build, SSR của Amplify, không chỉ dựa vào thông báo trên frontend.
+Các request âm tính ai cũng chạy lại được (kết quả mong đợi ở cuối dòng):
+```sh
+curl -i "$API_URL/admin/reservations"                              # 401
+curl -i -X POST "$API_URL/reservations" -H 'Content-Type: application/json' --data '{}'         # 400
+curl -i -X POST "$API_URL/reservations" -H 'Content-Type: application/json' --data '{bad-json'  # 400
+```
+Chưa thực hiện: thử tranh chấp chỗ thật trên DynamoDB, thử tải (mục tiêu p95 dưới 2 giây ở 5 request/giây trong 5 phút) và thử khôi phục theo thời điểm. Các mục này là kế hoạch, không tuyên bố đã đạt.
 
 ### Logs
-- Log Lambda trong CloudWatch, lưu 14 ngày (lỗi gửi thư được ghi theo mã yêu cầu, không ghi nội dung email).
-- Log build và SSR của Amplify.
+- Access log của API Gateway gồm `requestId`, `requestTime`, `routeKey`, `status`, `responseLength` và `integrationLatency`; không ghi cookie, header Authorization hay nội dung body. Lưu 14 ngày.
+- Log group Lambda `/aws/lambda/aurel-backend-api`, cùng log build và SSR của Amplify.
+```sh
+aws logs tail /aws/lambda/aurel-backend-api --since 10m
+```
 
-### Metrics
-- Basic metrics trong CloudWatch cho Lambda và Amplify.
+### Metrics và alarm
+Stack `aurel-observability` riêng tạo một dashboard và bốn alarm CloudWatch:
+
+| Alarm | Metric | Điều kiện |
+| --- | --- | --- |
+| LambdaErrors | Lambda `Errors`, Sum | từ 1 trở lên trong 5 phút |
+| LambdaThrottles | Lambda `Throttles`, Sum | từ 1 trở lên trong 5 phút |
+| Api5xx | API Gateway `5xx`, Sum | từ 1 trở lên trong 5 phút |
+| ApiLatency | API Gateway `Latency`, Average | từ 2000 ms trong 2 cửa sổ 5 phút liên tiếp |
 
 ### Alerts
-- Chưa cấu hình alarm riêng cho AUREL.
+Dữ liệu thiếu được coi là không vi phạm. Alarm chưa có action và chưa có SNS subscription, nên alarm đổi trạng thái trong CloudWatch nhưng chưa gửi email. Bài thử `SetAlarmState` đã chuyển `Api5xx` sang ALARM rồi về OK; đây là mô phỏng, không phải sự cố thật.

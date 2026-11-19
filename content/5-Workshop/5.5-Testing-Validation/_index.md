@@ -1,33 +1,40 @@
 ---
 title: "Testing & Validation"
-date: 2026-11-11
+date: 2026-11-17
 weight: 5
 chapter: false
 pre: " <b> 5.5. </b> "
 ---
 
-### Local checks
-```sh
-pnpm check          # TypeScript, unit/integration tests, bundle Lambda + seed
-pnpm build
-pnpm test:smoke     # separate server on port 3100, temporary data
-```
+### Test results
+- **Local:** 30 automated tests, TypeScript check and builds pass; the smoke suite on a local build passes 41 HTTP checks (reservation, resubmission, admin authorization, image upload). The DynamoDB transaction is tested with a mock.
+- **Backend on AWS:** 14 checks pass, covering Cognito access token, rejection of an ID token, saving and reading reservations, status change, idempotency, real S3 PUT/GET and contact messages.
+- **Release checks:** the public and admin APIs both return 100 dishes, the 7 pages return HTTP 200, and images match byte for byte. These are HTTP checks, not browser automation.
 
-### Checks on AWS after deployment
-1. `/menu` returns 100 dishes after seeding, and the browser Network tab shows no CORS error.
-2. Book a table with an email verified in the SES sandbox; check the DynamoDB record, the SES email and the `pending` status.
-3. Sign in as an admin in the group, confirm a reservation, reload and compare with the database.
-4. A user outside the group and an expired token must be rejected; the public cannot read the reservation or message lists.
-5. Add, edit, hide and delete a dish; the menu page reflects the API data.
-6. Upload a test image in the S3 tab; the PUT succeeds and the preview shows. The bucket has no public read access.
-7. Check the Lambda logs in CloudWatch and the Amplify build and SSR logs, not only the frontend messages.
+Negative requests that anyone can repeat (expected results in brackets):
+```sh
+curl -i "$API_URL/admin/reservations"                              # 401
+curl -i -X POST "$API_URL/reservations" -H 'Content-Type: application/json' --data '{}'         # 400
+curl -i -X POST "$API_URL/reservations" -H 'Content-Type: application/json' --data '{bad-json'  # 400
+```
+Not done yet: a real concurrency test on DynamoDB, a load test (target p95 under 2 s at 5 requests/s for 5 minutes) and a point-in-time-recovery drill. They are planned, not claimed as passed.
 
 ### Logs
-- Lambda logs in CloudWatch, retention 14 days (email delivery errors are logged by request code, without email content).
-- Amplify build and SSR logs.
+- API Gateway access log with `requestId`, `requestTime`, `routeKey`, `status`, `responseLength` and `integrationLatency`; no cookies, authorization headers or request bodies. Retention is 14 days.
+- Lambda log group `/aws/lambda/aurel-backend-api`, plus Amplify build and SSR logs.
+```sh
+aws logs tail /aws/lambda/aurel-backend-api --since 10m
+```
 
-### Metrics
-- Basic metrics in CloudWatch for Lambda and Amplify.
+### Metrics and alarms
+A separate `aurel-observability` stack creates a dashboard and four CloudWatch alarms:
+
+| Alarm | Metric | Condition |
+| --- | --- | --- |
+| LambdaErrors | Lambda `Errors`, Sum | at least 1 in 5 minutes |
+| LambdaThrottles | Lambda `Throttles`, Sum | at least 1 in 5 minutes |
+| Api5xx | API Gateway `5xx`, Sum | at least 1 in 5 minutes |
+| ApiLatency | API Gateway `Latency`, Average | 2000 ms or more in 2 consecutive 5-minute windows |
 
 ### Alerts
-- No dedicated AUREL alarm has been configured yet.
+Missing data is treated as not breaching. Alarm actions are still empty and there is no SNS subscription, so the alarms change state in CloudWatch but do not send email yet. A `SetAlarmState` test moved `Api5xx` to ALARM and back to OK; this is a simulation, not a real incident.

@@ -8,16 +8,13 @@ pre: " <b> 1.12. </b> "
 
 ### Mục tiêu tuần 12:
 
-* Bổ sung minh chứng và chốt báo cáo
+* Chốt báo cáo
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Bổ sung Metrics, Alerts và link video demo cho phần Workshop | 23/11/2026 | 23/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 3 | - Kiểm tra lại các trang tiếng Việt và tiếng Anh | 24/11/2026 | 24/11/2026 |  |
-| 4 | - Kiểm tra ảnh, link và định dạng trên GitHub Pages | 25/11/2026 | 25/11/2026 | [https://docs.github.com/en/pages](https://docs.github.com/en/pages) |
-| 5 | - Rà soát lần cuối toàn bộ báo cáo | 26/11/2026 | 26/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 6 | - Hoàn tất báo cáo | 27/11/2026 | 27/11/2026 |  |
+| 2 | - Rà soát lần cuối toàn bộ báo cáo | 30/11/2026 | 30/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 6 | - Hoàn tất báo cáo theo lịch của chương trình | 04/12/2026 | 04/12/2026 |  |
 
 ### Kết quả đạt được tuần 12:
 
