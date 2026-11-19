@@ -12,10 +12,10 @@ pre: " <b> 4.1. </b> "
 - **Role:** Attendee
 
 ### Main Content
-Sharing of knowledge by the senior members of the FCAJ team.
+Knowledge sharing by the senior members of the FCAJ team. From my view as an Information Assurance student, I paid attention to how security fits into cloud and AI work, such as access control and data protection.
 
 ### Check-in Photo
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.1-Event1/event1.jpg" alt="Photo at the AWS Cloud and AI Day watch party" style="max-width:100%; width:600px;">
 
 ### Lessons Learned / Personal Contribution
-New knowledge related to the field I am studying.
+New knowledge related to the field I am studying. I realized that basic security practices such as identity and access management, permissions and logging are needed in every cloud system, which links directly to what I learn in Information Assurance.

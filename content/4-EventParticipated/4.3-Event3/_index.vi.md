@@ -12,10 +12,10 @@ pre: " <b> 4.3. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-Q&A with Dr. Werner Vogels.
+Q&A with Dr. Werner Vogels. Dưới góc nhìn An toàn thông tin, buổi này giúp mình thấy hệ thống cloud cần được thiết kế với độ tin cậy và bảo mật ngay từ đầu.
 
 ### Hình ảnh check-in
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.3-Event3/event3.jpg" alt="Ảnh chụp chung tại Fireside Chat with Dr. Werner" style="max-width:100%; width:1000px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-Các kinh nghiệm và trải nghiệm liên quan tới hệ thống AWS vào những ngày đầu khi Dr. Werner mới tham gia công ty.
+Các kinh nghiệm và trải nghiệm liên quan tới hệ thống AWS vào những ngày đầu khi Dr. Werner mới tham gia công ty. Mình rút ra rằng một hệ thống lớn phát triển từng bước và cần chú ý đến bảo mật, độ tin cậy ở mọi giai đoạn.

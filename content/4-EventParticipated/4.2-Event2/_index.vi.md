@@ -12,10 +12,10 @@ pre: " <b> 4.2. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-Làm mô hình gấu nhồi bông thông minh phát ra âm thanh khi tác động.
+Làm mô hình gấu nhồi bông thông minh phát ra âm thanh khi tác động. Là sinh viên An toàn thông tin, mình cũng nghĩ tới việc đồ chơi thông minh khi kết nối internet cần bảo vệ an toàn thiết bị và quyền riêng tư của trẻ em.
 
 ### Hình ảnh check-in
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.2-Event2/event2.jpg" alt="Ảnh tại sự kiện Smart Plushies for Children" style="max-width:100%; width:600px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-Sử dụng Microsoft MakeCode để luyện tập cách tạo dựng mạch điện đơn giản và làm đồ chơi thông minh.
+Sử dụng Microsoft MakeCode để luyện tập cách tạo dựng mạch điện đơn giản và làm đồ chơi thông minh. Việc này giúp mình hình dung rõ cách thiết bị nhúng hoạt động, từ đó hiểu hơn về các rủi ro bảo mật IoT.

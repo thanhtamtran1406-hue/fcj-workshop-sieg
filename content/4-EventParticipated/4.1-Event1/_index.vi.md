@@ -12,10 +12,10 @@ pre: " <b> 4.1. </b> "
 - **Vai trò tham gia:** Người tham dự
 
 ### Nội dung chính tiếp thu
-Chia sẻ về kiến thức của các anh chị trong FCAJ team.
+Chia sẻ về kiến thức của các anh chị trong FCAJ team. Với góc nhìn của sinh viên An toàn thông tin, mình chú ý đến cách bảo mật được đặt trong các hệ thống cloud và AI, như kiểm soát truy cập và bảo vệ dữ liệu.
 
 ### Hình ảnh check-in
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.1-Event1/event1.jpg" alt="Ảnh tại AWS Cloud and AI Day - Watch Party" style="max-width:100%; width:600px;">
 
 ### Bài học rút ra / đóng góp cá nhân
-Các kiến thức mới liên quan đến ngành nghề đang theo học.
+Các kiến thức mới liên quan đến ngành nghề đang theo học. Mình nhận ra các nguyên tắc bảo mật cơ bản như quản lý danh tính, phân quyền và ghi log cần có trong mọi hệ thống cloud, gắn trực tiếp với những gì mình học ở ngành An toàn thông tin.

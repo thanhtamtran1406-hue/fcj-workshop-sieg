@@ -12,10 +12,10 @@ pre: " <b> 4.2. </b> "
 - **Role:** Attendee
 
 ### Main Content
-Building a smart plush bear model that makes a sound when it is interacted with.
+Building a smart plush bear model that makes a sound when it is interacted with. As an Information Assurance student, I also thought about how smart toys, once connected to the internet, must protect device security and children's privacy.
 
 ### Check-in Photo
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.2-Event2/event2.jpg" alt="Photo at the Smart Plushies for Children event" style="max-width:100%; width:600px;">
 
 ### Lessons Learned / Personal Contribution
-Used Microsoft MakeCode to practice building simple circuits and making smart toys.
+Used Microsoft MakeCode to practice building simple circuits and making smart toys. This gave me a hands-on view of how embedded devices work, which helps me understand IoT security risks.

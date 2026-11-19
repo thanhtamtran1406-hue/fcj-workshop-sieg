@@ -12,10 +12,10 @@ pre: " <b> 4.4. </b> "
 - **Role:** Attendee
 
 ### Main Content
-From production to consumption in AI development, and the points worth considering when developing AI.
+From production to consumption in AI development, and the points worth considering when developing AI. As an Information Assurance student, I focused on data protection, access control and the responsible use of AI systems.
 
 ### Check-in Photo
 <img src="/fcj-workshop-sieg/images/4-EventParticipated/4.4-Event4/event4.jpg" alt="Photo at FCAJ x FPTU: Cloud Mastery 1" style="max-width:100%; width:600px;">
 
 ### Lessons Learned / Personal Contribution
-Understanding AI development from production to consumption, and the points to keep in mind when developing AI.
+Understanding AI development from production to consumption, and the points to keep in mind when developing AI. I learned to consider the security and privacy of data and models throughout the whole lifecycle, not only at deployment.
