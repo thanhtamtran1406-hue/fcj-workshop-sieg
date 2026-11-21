@@ -11,7 +11,9 @@ Small restaurants often show their dishes on social media but take bookings thro
 
 ### 2. Objectives and scope
 **Objectives:** show the restaurant and its menu, receive table requests with a clear status, let staff manage the menu and requests, and give operators logs, metrics and alarms.
+
 **In scope:** home, menu, venue photos, about, contact, reservation and admin pages; menu CRUD; reservation status updates; dish photo upload to S3; acknowledgement email within the SES sandbox.
+
 **Out of scope:** payments, POS, physical table maps, overlapping dining durations, customer accounts, multiple branches and commercial SLA.
 
 ### 3. Problem to solve

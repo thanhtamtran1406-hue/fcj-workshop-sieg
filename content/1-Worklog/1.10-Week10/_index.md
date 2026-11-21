@@ -21,4 +21,5 @@ pre: " <b> 1.10. </b> "
 
 ### Week 10 Achievements:
 
-* [Update after completing this week]
+* Completed the Proposal, Self-Assessment and Sharing and Feedback sections
+* Reviewed the report content against the minimum requirements list

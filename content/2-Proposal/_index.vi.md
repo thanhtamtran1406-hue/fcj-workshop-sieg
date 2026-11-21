@@ -11,7 +11,9 @@ Nhà hàng nhỏ thường giới thiệu món trên mạng xã hội nhưng nh�
 
 ### 2. Mục tiêu và phạm vi
 **Mục tiêu:** giới thiệu nhà hàng và thực đơn, nhận yêu cầu đặt bàn có trạng thái rõ ràng, cho nhân viên quản lý thực đơn và yêu cầu, và cung cấp cho người vận hành log, metrics và alarm.
+
 **Trong phạm vi:** các trang chủ, thực đơn, không gian, giới thiệu, liên hệ, đặt bàn và admin; CRUD thực đơn; cập nhật trạng thái đặt bàn; tải ảnh món lên S3; email tiếp nhận trong giới hạn SES sandbox.
+
 **Ngoài phạm vi:** thanh toán, POS, sơ đồ bàn vật lý, thời lượng dùng bữa chồng lấn, tài khoản khách, nhiều chi nhánh và SLA thương mại.
 
 ### 3. Vấn đề cần giải quyết

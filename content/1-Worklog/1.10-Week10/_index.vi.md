@@ -21,4 +21,5 @@ pre: " <b> 1.10. </b> "
 
 ### Kết quả đạt được tuần 10:
 
-* [Cập nhật sau khi hoàn thành tuần này]
+* Hoàn thiện Bản đề xuất, Tự đánh giá và Chia sẻ, đóng góp ý kiến
+* Rà soát nội dung báo cáo theo danh sách yêu cầu tối thiểu

@@ -20,7 +20,7 @@ pre: " <b> 1.9. </b> "
 | 5 | - Write the Workshop section on the report website | 12/11/2026 | 12/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 6 | - Add the architecture diagram (both languages) and remove old template pages | 13/11/2026 | 13/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 7 | - Attend FCAJ x FPTU: Cloud Mastery 1 (09:00, floor 26 Bitexco) | 14/11/2026 | 14/11/2026 |  |
-| CN | - Add Event 4 to the report website | 15/11/2026 | 15/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| Sun | - Add Event 4 to the report website | 15/11/2026 | 15/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Week 9 Achievements:
 
