@@ -1,5 +1,5 @@
 ---
-title: "Minh chứng sản phẩm chạy thực tế (Demo)"
+title: "Minh chứng sản phẩm chạy thực tế"
 date: 2026-11-17
 weight: 7
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Kiểm thử & đo lường (Testing & Validation)"
+title: "Kiểm thử và đo lường"
 date: 2026-11-17
 weight: 5
 chapter: false

@@ -1,5 +1,5 @@
 ---
-title: "Prerequisite (Điều kiện tiên quyết)"
+title: "Điều kiện tiên quyết"
 date: 2026-11-17
 weight: 2
 chapter: false

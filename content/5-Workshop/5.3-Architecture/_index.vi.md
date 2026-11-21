@@ -1,5 +1,5 @@
 ---
-title: "Kiến trúc chi tiết (Architecture & Data Flow)"
+title: "Kiến trúc chi tiết và luồng dữ liệu"
 date: 2026-11-17
 weight: 3
 chapter: false

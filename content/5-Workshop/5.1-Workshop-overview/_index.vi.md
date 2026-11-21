@@ -1,5 +1,5 @@
 ---
-title: "Overview (Tổng quan)"
+title: "Tổng quan"
 date: 2026-11-17
 weight: 1
 chapter: false

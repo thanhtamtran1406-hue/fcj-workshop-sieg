@@ -1,5 +1,5 @@
 ---
-title: "Dọn dẹp tài nguyên (Clean-up)"
+title: "Dọn dẹp tài nguyên"
 date: 2026-11-17
 weight: 6
 chapter: false

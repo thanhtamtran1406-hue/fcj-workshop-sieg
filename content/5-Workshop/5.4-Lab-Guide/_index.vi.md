@@ -1,5 +1,5 @@
 ---
-title: "Các bước triển khai thực hành (Step-by-step Lab Guide)"
+title: "Các bước triển khai thực hành"
 date: 2026-11-17
 weight: 4
 chapter: false
