@@ -17,7 +17,7 @@ pre: " <b> 1.10. </b> "
 | 3 | - Soạn nhật ký công việc 12 tuần và cập nhật bản đề xuất, Workshop từ nội dung chung của nhóm | 17/11/2026 | 17/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 4 | - Hoàn thiện Self-Assessment (8 tiêu chí) | 18/11/2026 | 18/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 | 5 | - Hoàn thiện Sharing and Feedback | 19/11/2026 | 19/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 6 | - Bổ sung link video demo cho phần Workshop | 20/11/2026 | 20/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Rà soát phần Workshop trước khi bổ sung demo | 20/11/2026 | 20/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 
 ### Kết quả đạt được tuần 10:
 

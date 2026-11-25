@@ -15,6 +15,8 @@ pnpm check && pnpm build && pnpm test:smoke
 ```
 `pnpm setup` creates a local `.env.local`; do not commit it.
 
+**Expected result:** `pnpm check` and `pnpm build` finish without errors, the smoke suite passes, and the site opens locally with the menu loaded.
+
 ### Step 2. Deploy the AWS backend
 ```sh
 export AWS_PROFILE=aurel-lab AWS_REGION=ap-southeast-1
@@ -41,6 +43,8 @@ The seed script only adds missing dishes and can be run again. The admin script 
 curl -i "$API_URL/menu"                 # 200
 curl -i "$API_URL/admin/reservations"   # 401
 ```
+
+**Expected result:** the `aurel-backend` stack reaches `CREATE_COMPLETE` and prints its outputs (`ApiUrl`, table, buckets, user pool). `/menu` returns 200 with the 100 seeded dishes, and `/admin/reservations` returns 401 without a token.
 
 ### Step 3. Deploy the frontend with CI/CD
 ```sh
@@ -70,3 +74,5 @@ aws amplify start-job --app-id "$APP_ID" --branch-name main --job-type RELEASE
 aws amplify list-jobs --app-id "$APP_ID" --branch-name main --max-results 5
 ```
 Treat the deployment as successful only when the job status is `SUCCEED`. The ZIP seeds the repository only once; later updates are Git pushes to `main`, which Amplify builds automatically.
+
+**Expected result:** the Amplify job ends with status `SUCCEED`, the website opens at its Amplify address, the menu loads from the API without CORS errors, and an admin can sign in.

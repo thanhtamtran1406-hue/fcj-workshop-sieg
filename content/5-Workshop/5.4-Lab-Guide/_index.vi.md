@@ -15,6 +15,8 @@ pnpm check && pnpm build && pnpm test:smoke
 ```
 `pnpm setup` tạo file `.env.local` cục bộ; không đưa file này vào Git.
 
+**Kết quả mong đợi:** `pnpm check` và `pnpm build` chạy không lỗi, bộ smoke đạt, và website mở được trên máy với thực đơn đã tải.
+
 ### Bước 2. Triển khai backend AWS
 ```sh
 export AWS_PROFILE=aurel-lab AWS_REGION=ap-southeast-1
@@ -41,6 +43,8 @@ Script seed chỉ thêm các món còn thiếu và có thể chạy lại. Scrip
 curl -i "$API_URL/menu"                 # 200
 curl -i "$API_URL/admin/reservations"   # 401
 ```
+
+**Kết quả mong đợi:** stack `aurel-backend` đạt `CREATE_COMPLETE` và in ra các outputs (`ApiUrl`, bảng, bucket, user pool). `/menu` trả 200 với 100 món đã nạp, còn `/admin/reservations` trả 401 khi không có token.
 
 ### Bước 3. Triển khai frontend với CI/CD
 ```sh
@@ -70,3 +74,5 @@ aws amplify start-job --app-id "$APP_ID" --branch-name main --job-type RELEASE
 aws amplify list-jobs --app-id "$APP_ID" --branch-name main --max-results 5
 ```
 Chỉ coi là triển khai thành công khi trạng thái job là `SUCCEED`. File ZIP chỉ nạp repository một lần; các lần cập nhật sau là Git push lên `main`, Amplify tự build.
+
+**Kết quả mong đợi:** Amplify job kết thúc với trạng thái `SUCCEED`, website mở được ở địa chỉ Amplify, thực đơn tải từ API không có lỗi CORS và admin đăng nhập được.

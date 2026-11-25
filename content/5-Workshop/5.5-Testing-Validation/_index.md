@@ -38,3 +38,11 @@ A separate `aurel-observability` stack creates a dashboard and four CloudWatch a
 
 ### Alerts
 Missing data is treated as not breaching. Alarm actions are still empty and there is no SNS subscription, so the alarms change state in CloudWatch but do not send email yet. A `SetAlarmState` test moved `Api5xx` to ALARM and back to OK; this is a simulation, not a real incident.
+
+### When an alarm fires
+| Alarm | First thing to check |
+| --- | --- |
+| LambdaErrors | Open the Lambda log group, find the failing call by its request ID, and check whether a deployment just happened |
+| LambdaThrottles | Check concurrent executions and the account quota, and look for a burst of requests in the access log |
+| Api5xx | Filter the access log for 5xx rows (`routeKey`, `status`), then follow the `requestId` into the Lambda log |
+| ApiLatency | Compare `integrationLatency` with the total latency in the access log, then check Lambda duration and DynamoDB calls |

@@ -17,7 +17,7 @@ pre: " <b> 1.10. </b> "
 | 3 | - Prepare the 12-week Worklog and update the Proposal and Workshop from the team content | 17/11/2026 | 17/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 4 | - Complete the Self-Assessment (8 criteria) | 18/11/2026 | 18/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 | 5 | - Complete Sharing and Feedback | 19/11/2026 | 19/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
-| 6 | - Add the demo video link to the Workshop section | 20/11/2026 | 20/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
+| 6 | - Review the Workshop section before adding the demo | 20/11/2026 | 20/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 
 ### Week 10 Achievements:
 
