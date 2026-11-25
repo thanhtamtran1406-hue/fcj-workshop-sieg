@@ -11,8 +11,6 @@ pre: " <b> 5.7. </b> "
 - **Trang admin:** <https://main.d2rkhtb7c0k5r7.amplifyapp.com/admin>
 - **Mã nguồn:** <https://github.com/ndthuy21/aurel-restaurant>
 
-Mật khẩu admin không công khai trong báo cáo; người trình bày tự đăng nhập trên thiết bị của mình. Tên món, giá, thương hiệu và địa chỉ là dữ liệu minh họa nên không nhập thông tin khách thật khi thử demo.
-
 ### Video demo
 <iframe width="720" height="405" src="https://www.youtube.com/embed/_Dpp0RJAG_w" title="AUREL demo video" allowfullscreen style="max-width:100%; border:0;"></iframe>
 
