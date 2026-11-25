@@ -6,18 +6,18 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-**[Sự kiện 1: AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City](4.1-event1/)**
+### [Sự kiện 1: AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City](4.1-event1/)
 
 09:00, 29/09/2026 | Tầng 26, tòa nhà Bitexco, TP.HCM | Người tham dự
 
-**[Sự kiện 2: Smart Plushies for Children](4.2-event2/)**
+### [Sự kiện 2: Smart Plushies for Children](4.2-event2/)
 
 09:00, 26/10/2026 | Tầng 36, tòa nhà Bitexco, TP.HCM | Người tham dự
 
-**[Sự kiện 3: Fireside Chat with Dr. Werner](4.3-event3/)**
+### [Sự kiện 3: Fireside Chat with Dr. Werner](4.3-event3/)
 
 09:00, 02/10/2026 | Tầng 26, tòa nhà Bitexco, TP.HCM | Người tham dự
 
-**[Sự kiện 4: FCAJ x FPTU: Cloud Mastery 1](4.4-event4/)**
+### [Sự kiện 4: FCAJ x FPTU: Cloud Mastery 1](4.4-event4/)
 
 09:00, 14/11/2026 | Tầng 26, tòa nhà Bitexco, TP.HCM | Người tham dự
