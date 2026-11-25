@@ -11,8 +11,6 @@ pre: " <b> 5.7. </b> "
 - **Admin page:** <https://main.d2rkhtb7c0k5r7.amplifyapp.com/admin>
 - **Source code:** <https://github.com/ndthuy21/aurel-restaurant>
 
-The admin password is not published in this report; the presenter signs in on their own device. Dish names, prices, brand and address are sample data, so do not enter real customer information when trying the demo.
-
 ### Demo video
 <iframe width="720" height="405" src="https://www.youtube.com/embed/_Dpp0RJAG_w" title="AUREL demo video" allowfullscreen style="max-width:100%; border:0;"></iframe>
 
