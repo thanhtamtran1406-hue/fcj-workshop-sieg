@@ -1,6 +1,6 @@
 ---
-title: "Tổng quan"
-date: 2026-11-17
+title: "Tổng quan và tiêu chí hoàn thành"
+date: 2026-11-26
 weight: 1
 chapter: false
 pre: " <b> 5.1. </b> "
@@ -14,7 +14,7 @@ AUREL là website nhà hàng minh họa theo phong cách tối và vàng. Khách
 
 **Quy tắc nghiệp vụ:** yêu cầu đặt bàn mới chỉ là một yêu cầu ở trạng thái `pending`. Nhân viên xác nhận hoặc hủy sau đó, nên gửi form thành công chưa có nghĩa là bàn đã được xác nhận.
 
-**Đầu ra mong đợi**
+**Tiêu chí hoàn thành (đầu ra mong đợi)**
 - Website 7 trang có form hoạt động với backend.
 - Thực đơn 100 món với ảnh WebP tự lưu trữ.
 - API công khai và API admin có ranh giới quyền rõ ràng.

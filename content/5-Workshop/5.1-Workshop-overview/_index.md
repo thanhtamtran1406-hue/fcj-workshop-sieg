@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-date: 2026-11-17
+title: "Overview and completion criteria"
+date: 2026-11-26
 weight: 1
 chapter: false
 pre: " <b> 5.1. </b> "
@@ -14,7 +14,7 @@ AUREL is a demo restaurant website with a dark and gold look. Visitors browse a 
 
 **Business rule:** a new reservation is only a request with status `pending`. Staff confirm or cancel it later, so a successful form submission does not mean the table is confirmed.
 
-**Expected outputs**
+**Completion criteria (expected outputs)**
 - A 7-page website whose forms work against the backend.
 - A 100-dish menu with self-hosted WebP images.
 - Public and admin APIs with clear access boundaries.

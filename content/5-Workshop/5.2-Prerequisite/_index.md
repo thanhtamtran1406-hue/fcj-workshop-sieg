@@ -1,6 +1,6 @@
 ---
-title: "Prerequisite"
-date: 2026-11-17
+title: "Prerequisites"
+date: 2026-11-26
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "

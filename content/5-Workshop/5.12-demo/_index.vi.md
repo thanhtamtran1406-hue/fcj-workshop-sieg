@@ -1,15 +1,17 @@
 ---
-title: "Minh chứng sản phẩm chạy thực tế"
-date: 2026-11-17
-weight: 7
+title: "Demo và minh chứng"
+date: 2026-11-26
+weight: 12
 chapter: false
-pre: " <b> 5.7. </b> "
+pre: " <b> 5.12. </b> "
 ---
 
 ### Sản phẩm đang chạy
 - **Website (Amplify):** <https://main.d2rkhtb7c0k5r7.amplifyapp.com/>
 - **Trang admin:** <https://main.d2rkhtb7c0k5r7.amplifyapp.com/admin>
 - **Mã nguồn:** <https://github.com/ndthuy21/aurel-restaurant>
+
+Mật khẩu admin không công khai trong báo cáo; người trình bày tự đăng nhập trên thiết bị của mình. Tên món, giá, thương hiệu và địa chỉ là dữ liệu minh họa nên không nhập thông tin khách thật khi thử demo.
 
 ### Video demo
 <iframe width="720" height="405" src="https://www.youtube.com/embed/_Dpp0RJAG_w" title="AUREL demo video" allowfullscreen style="max-width:100%; border:0;"></iframe>

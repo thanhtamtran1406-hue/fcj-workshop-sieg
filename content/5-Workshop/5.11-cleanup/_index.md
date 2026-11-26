@@ -1,9 +1,9 @@
 ---
 title: "Clean-up"
-date: 2026-11-17
-weight: 6
+date: 2026-11-26
+weight: 11
 chapter: false
-pre: " <b> 5.6. </b> "
+pre: " <b> 5.11. </b> "
 ---
 
 Run this only in your own lab account and only after you decide to stop the service. Deleting a stack does not remove everything: the DynamoDB table, the media and artifacts buckets and the CodeCommit repository use the Retain policy.

@@ -1,6 +1,6 @@
 ---
-title: "Kiến trúc chi tiết và luồng dữ liệu"
-date: 2026-11-17
+title: "Kiến trúc và luồng dữ liệu"
+date: 2026-11-26
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "

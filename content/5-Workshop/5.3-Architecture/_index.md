@@ -1,6 +1,6 @@
 ---
-title: "Architecture & Data Flow"
-date: 2026-11-17
+title: "Architecture and data flow"
+date: 2026-11-26
 weight: 3
 chapter: false
 pre: " <b> 5.3. </b> "

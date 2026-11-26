@@ -1,9 +1,9 @@
 ---
 title: "Dọn dẹp tài nguyên"
-date: 2026-11-17
-weight: 6
+date: 2026-11-26
+weight: 11
 chapter: false
-pre: " <b> 5.6. </b> "
+pre: " <b> 5.11. </b> "
 ---
 
 Chỉ chạy trong tài khoản lab của riêng bạn và chỉ sau khi đã quyết định ngừng dịch vụ. Xóa stack không xóa hết mọi thứ: bảng DynamoDB, bucket media, bucket artifacts và repository CodeCommit dùng chính sách Retain.

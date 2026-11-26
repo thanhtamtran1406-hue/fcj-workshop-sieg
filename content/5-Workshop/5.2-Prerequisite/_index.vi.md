@@ -1,6 +1,6 @@
 ---
 title: "Điều kiện tiên quyết"
-date: 2026-11-17
+date: 2026-11-26
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
