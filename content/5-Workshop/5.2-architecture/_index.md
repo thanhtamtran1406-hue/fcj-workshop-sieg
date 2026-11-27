@@ -19,7 +19,7 @@ pre: " <b> 5.2. </b> "
 **Admin and media flow**
 - The browser sends the sign-in to the Next.js BFF, which authenticates with Cognito and keeps the access token in an HttpOnly, SameSite=Strict cookie (Secure when deployed). The BFF forwards it in the Authorization header. The API Gateway JWT authorizer checks signature, issuer, audience and expiry; Lambda also checks token_use=access and the admin group.
 - Dish photos (JPEG, PNG or WebP, up to 2 MB) go through the BFF and API Gateway to Lambda, which stores them under menu-images/ in a private S3 bucket and saves the path in DynamoDB. When a visitor views the menu, Lambda returns a signed GET URL for the current image version.
-- In the diagram, arrow 7 links Cognito to S3 Media. The real flow is: Cognito provides the admin access token, Lambda writes to S3 with its IAM execution role, and the browser reads images with the signed GET URL. A separate test page /admin/media uses signed PUT (120 s) and GET (900 s) URLs, and files under uploads/ expire after 30 days.
+- Arrow 7 in the diagram: Lambda writes dish images to the private S3 media bucket with its IAM execution role, and the browser reads them with a signed GET URL. A separate test page /admin/media uses signed PUT (120 s) and GET (900 s) URLs, and files under uploads/ expire after 30 days.
 
 **DynamoDB model:** one on-demand table with encryption and point-in-time recovery.
 

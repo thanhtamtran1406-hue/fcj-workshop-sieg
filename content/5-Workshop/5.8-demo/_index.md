@@ -28,7 +28,9 @@ The admin password is not published in this report; the presenter signs in on th
 7. Questions: SES sandbox, admin MFA, quotas and the proposed email queue.
 
 ### More evidence
-Detailed HTTP check results and the demo evidence files are kept on the group's report site: <https://report.d2rkhtb7c0k5r7.amplifyapp.com/vi/5-workshop/5.12-demo/>
+Photo evidence: the AUREL home page running on Amplify Hosting.
+
+<img src="/fcj-workshop-sieg/images/5-Workshop/5.8-demo/home-screenshot.jpg" alt="AUREL home page running on Amplify Hosting" style="max-width:100%; width:900px;">
 
 ### Common problems and fixes
 | Symptom | Likely cause | What to do |
@@ -39,6 +41,8 @@ Detailed HTTP check results and the demo evidence files are kept on the group's 
 | A reservation is saved but no email arrives | SES is in the sandbox and the recipient is not verified | Verify the address or use the mailbox simulator |
 | The Amplify job fails | Wrong Node version or missing variables | Read the build log, use Node 22 and the variable table |
 | Resources remain after deleting stacks | Retain policy on the table, buckets and repository | Follow the clean-up page |
+| SES sandbox | Being able to send does not mean sending to every address | Verify the sender, try the mailbox simulator, save the request first and state the sandbox limit |
+| Documentation commits still trigger a build | The pipeline follows the branch and may not honor skip markers | Stop jobs that change only documentation; keep the report repository separate from the app |
 
 ### Lessons learned
 - Write down every output of a stack right after creating it; later steps depend on them.

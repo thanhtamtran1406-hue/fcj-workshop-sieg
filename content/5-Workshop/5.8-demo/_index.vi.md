@@ -28,7 +28,9 @@ Mật khẩu admin không công khai trong báo cáo; người trình bày tự 
 7. Hỏi đáp: SES sandbox, MFA cho admin, hạn mức và hàng đợi email đề xuất.
 
 ### Minh chứng bổ sung
-Kết quả kiểm tra HTTP chi tiết và các tệp minh chứng demo được lưu trên trang báo cáo của nhóm: <https://report.d2rkhtb7c0k5r7.amplifyapp.com/vi/5-workshop/5.12-demo/>
+Bằng chứng ảnh: trang chủ AUREL đang chạy trên Amplify Hosting.
+
+<img src="/fcj-workshop-sieg/images/5-Workshop/5.8-demo/home-screenshot.jpg" alt="Trang chủ AUREL đang chạy trên Amplify Hosting" style="max-width:100%; width:900px;">
 
 ### Sự cố thường gặp và cách xử lý
 | Biểu hiện | Nguyên nhân có thể | Cách xử lý |
@@ -39,6 +41,8 @@ Kết quả kiểm tra HTTP chi tiết và các tệp minh chứng demo được
 | Đặt bàn đã lưu nhưng không có email | SES ở sandbox và người nhận chưa được xác minh | Xác minh địa chỉ hoặc dùng mailbox simulator |
 | Amplify job thất bại | Sai phiên bản Node hoặc thiếu biến | Đọc build log, dùng Node 22 và bảng biến môi trường |
 | Còn tài nguyên sau khi xóa stack | Chính sách Retain trên bảng, bucket và repository | Làm theo trang dọn dẹp |
+| SES sandbox | Gửi được không đồng nghĩa gửi cho mọi địa chỉ | Verify sender, thử mailbox simulator, lưu yêu cầu trước và ghi rõ sandbox |
+| Commit tài liệu vẫn kích hoạt build | Pipeline dựa branch, không chắc hiểu skip marker | Dừng job chỉ đổi docs; tách report repository khỏi app |
 
 ### Bài học rút ra
 - Ghi lại mọi output của stack ngay sau khi tạo; các bước sau cần dùng đến.

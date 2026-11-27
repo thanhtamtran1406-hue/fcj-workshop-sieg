@@ -19,7 +19,7 @@ pre: " <b> 5.2. </b> "
 **Luồng admin và media**
 - Trình duyệt gửi thông tin đăng nhập tới Next.js BFF, BFF xác thực với Cognito và giữ access token trong cookie HttpOnly, SameSite=Strict (Secure khi triển khai). BFF chuyển token trong header Authorization. JWT authorizer của API Gateway kiểm tra chữ ký, issuer, audience và thời hạn; Lambda kiểm tra thêm token_use=access và nhóm admin.
 - Ảnh món (JPEG, PNG hoặc WebP, tối đa 2 MB) đi qua BFF và API Gateway tới Lambda, Lambda lưu vào tiền tố menu-images/ của bucket S3 riêng tư và ghi đường dẫn vào DynamoDB. Khi khách xem thực đơn, Lambda cấp URL GET ký sẵn cho phiên bản ảnh hiện hành.
-- Trong sơ đồ, mũi tên 7 nối Cognito với S3 Media. Luồng thực tế là: Cognito cấp access token cho admin, Lambda ghi vào S3 bằng IAM execution role, và trình duyệt đọc ảnh bằng URL GET ký sẵn. Trang thử nghiệm riêng /admin/media dùng URL PUT (120 giây) và GET (900 giây) ký sẵn, tệp trong uploads/ hết hạn sau 30 ngày.
+- Mũi tên 7 trong sơ đồ: Lambda ghi ảnh món vào S3 media bucket riêng tư bằng IAM execution role, và trình duyệt đọc ảnh bằng URL GET ký sẵn. Trang thử nghiệm riêng /admin/media dùng URL PUT (120 giây) và GET (900 giây) ký sẵn, tệp trong uploads/ hết hạn sau 30 ngày.
 
 **Mô hình DynamoDB:** một bảng on-demand, bật mã hóa và khôi phục theo thời điểm.
 
