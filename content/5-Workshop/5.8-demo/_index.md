@@ -41,7 +41,7 @@ Photo evidence: the AUREL home page running on Amplify Hosting.
 | A reservation is saved but no email arrives | SES is in the sandbox and the recipient is not verified | Verify the address or use the mailbox simulator |
 | The Amplify job fails | Wrong Node version or missing variables | Read the build log, use Node 22 and the variable table |
 | Resources remain after deleting stacks | Retain policy on the table, buckets and repository | Follow the clean-up page |
-| SES sandbox | Being able to send does not mean sending to every address | Verify the sender, try the mailbox simulator, save the request first and state the sandbox limit |
+| Font error reported on a Windows machine | Fonts and symbols that depend on the device may lack glyphs | Embed Noto for Vietnamese, check NFC/NFD, replace symbols with SVG. Not yet re-tested on Windows |
 | Documentation commits still trigger a build | The pipeline follows the branch and may not honor skip markers | Stop jobs that change only documentation; keep the report repository separate from the app |
 
 ### Lessons learned

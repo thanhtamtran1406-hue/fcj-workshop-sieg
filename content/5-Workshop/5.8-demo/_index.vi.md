@@ -41,7 +41,7 @@ Bằng chứng ảnh: trang chủ AUREL đang chạy trên Amplify Hosting.
 | Đặt bàn đã lưu nhưng không có email | SES ở sandbox và người nhận chưa được xác minh | Xác minh địa chỉ hoặc dùng mailbox simulator |
 | Amplify job thất bại | Sai phiên bản Node hoặc thiếu biến | Đọc build log, dùng Node 22 và bảng biến môi trường |
 | Còn tài nguyên sau khi xóa stack | Chính sách Retain trên bảng, bucket và repository | Làm theo trang dọn dẹp |
-| SES sandbox | Gửi được không đồng nghĩa gửi cho mọi địa chỉ | Verify sender, thử mailbox simulator, lưu yêu cầu trước và ghi rõ sandbox |
+| Lỗi font trên máy bạn dùng Windows được phản ánh | Font/ký hiệu phụ thuộc thiết bị có thể thiếu glyph | Nhúng Noto tiếng Việt, kiểm tra NFC/NFD; thay ký hiệu bằng SVG. Chưa có xác nhận thử lại trên Windows |
 | Commit tài liệu vẫn kích hoạt build | Pipeline dựa branch, không chắc hiểu skip marker | Dừng job chỉ đổi docs; tách report repository khỏi app |
 
 ### Bài học rút ra
