@@ -17,4 +17,6 @@ pre: " <b> 1.12. </b> "
 
 ### Kết quả đạt được tuần 12:
 
-* [Cập nhật sau khi hoàn thành tuần này]
+* Kết quả cập nhật đến ngày 30/11/2026.
+* Đã kiểm tra bản Việt–Anh, liên kết nội bộ và hồ sơ nộp Workshop.
+* Video demo nhóm đã được gắn vào report.

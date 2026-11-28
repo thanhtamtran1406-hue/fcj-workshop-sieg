@@ -17,4 +17,6 @@ pre: " <b> 1.12. </b> "
 
 ### Week 12 Achievements:
 
-* [Update after completing this week]
+* Results updated as of 30/11/2026.
+* Checked the Vietnamese and English versions, the internal links and the Workshop submission package.
+* The team demo video has been added to the report.
