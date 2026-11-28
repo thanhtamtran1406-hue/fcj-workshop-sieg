@@ -9,7 +9,6 @@ pre: " <b> 1.11. </b> "
 ### Mục tiêu tuần 11:
 
 * Kiểm tra và hoàn thiện báo cáo
-* Tham dự sự kiện ngày 28/11
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
@@ -19,8 +18,8 @@ pre: " <b> 1.11. </b> "
 | 4 | - Hoàn thiện phần Workshop: kết quả mong đợi cho từng bước lab và bảng xử lý cảnh báo<br>- Đối chiếu nội dung với bản chung của nhóm | 25/11/2026 | 25/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 5 | - Rà soát nhật ký công việc, ngày tháng và tài liệu tham khảo | 26/11/2026 | 26/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 | 6 | - Cập nhật các phần còn thiếu nếu có | 27/11/2026 | 27/11/2026 |  |
-| 7 | - Tham dự sự kiện [tên sự kiện sẽ cập nhật] | 28/11/2026 | 28/11/2026 |  |
 
 ### Kết quả đạt được tuần 11:
 
-* [Cập nhật sau khi hoàn thành tuần này]
+* Bổ sung video demo của nhóm và hoàn thiện phần Workshop
+* Kiểm tra các trang tiếng Việt và tiếng Anh, ảnh và link

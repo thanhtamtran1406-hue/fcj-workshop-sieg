@@ -8,12 +8,12 @@ pre: " <b> 1.12. </b> "
 
 ### Mục tiêu tuần 12:
 
-* Hoàn tất và nộp nhật ký công việc đúng hạn 30/11
+* Hoàn tất báo cáo, nộp workshop và nhật ký công việc ngày 30/11
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Rà soát lần cuối toàn bộ báo cáo và nộp nhật ký công việc (ngày hết hạn) | 30/11/2026 | 30/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
+| 2 | - Rà soát lần cuối toàn bộ báo cáo; nộp workshop và nhật ký công việc (ngày hết hạn) | 30/11/2026 | 30/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 
 ### Kết quả đạt được tuần 12:
 

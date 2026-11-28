@@ -9,7 +9,6 @@ pre: " <b> 1.11. </b> "
 ### Week 11 Objectives:
 
 * Check and polish the report
-* Attend an event on 28/11
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
@@ -19,8 +18,8 @@ pre: " <b> 1.11. </b> "
 | 4 | - Complete the Workshop section: expected results for each lab step and the alarm runbook<br>- Cross-check the content with the team version | 25/11/2026 | 25/11/2026 | [https://github.com/ndthuy21/aurel-restaurant](https://github.com/ndthuy21/aurel-restaurant) |
 | 5 | - Review the Worklog, dates and references | 26/11/2026 | 26/11/2026 | [https://hcm-rules.awsfcaj.com/project/content](https://hcm-rules.awsfcaj.com/project/content) |
 | 6 | - Update any missing parts | 27/11/2026 | 27/11/2026 |  |
-| 7 | - Attend an event [event name to be updated] | 28/11/2026 | 28/11/2026 |  |
 
 ### Week 11 Achievements:
 
-* [Update after completing this week]
+* Added the team demo video and completed the Workshop section
+* Checked the Vietnamese and English pages, images and links
